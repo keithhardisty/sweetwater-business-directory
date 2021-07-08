@@ -22,16 +22,16 @@
                   <div class="card-body">
                     <h4 class="h5 mb-4"><a class="text-dark" href="{{ .link | safeURL }}">{{ .company | markdownify }}</a></h4>
                     {{ if .name }}
-                      <p>{{ .name }}</p>
+                      <p style="font-style: italic;">{{ .name }}</p>
                     {{ end }}
                     {{ if .description }}
                       <p>{{ .description }}</p>
                     {{ end }}
                     {{ if .email }}
-                      <a href = "mailto:{{ .email }}">{{ .email }}</a><br>
+                      <p><a href = "mailto:{{ .email }}">{{ .email }}</a></p>
                     {{ end }}
                     {{ if .phone }}
-                      <a href="tel:{{ .phone }}">{{ .phone }}</a><br>
+                      <p><a href="tel:{{ .phone }}">{{ .phone }}</a></p>
                     {{ end }}
                     {{ if .link }}
                     <a href="{{ .link | safeURL }}" class="btn btn-primary">Visit Site</a>
