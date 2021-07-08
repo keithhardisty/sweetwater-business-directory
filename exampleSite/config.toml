@@ -6,9 +6,13 @@ summaryLength = "10"
 theme = "northendlab-hugo"
 title = "Sweetwater Business Directory"
 [[menu.footer]]
+name = "Companies"
+url = "/tools"
+weight = 1
+[[menu.footer]]
 URL = "contact"
 name = "Contact"
-weight = 1
+weight = 2
 [[menu.main]]
 name = "Companies"
 url = "/tools"
