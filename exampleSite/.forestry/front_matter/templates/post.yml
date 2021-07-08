@@ -25,4 +25,5 @@ fields:
   label: type
   default: post
 pages:
+- exampleSite/content/second.md
 - exampleSite/content/sweetwater-business-directory-launch.md
