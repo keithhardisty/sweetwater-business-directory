@@ -1,4 +1,16 @@
 ---
 label: Page
 hide_body: true
-fields: []
+fields:
+- name: test_select
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: configuration
+      file: exampleSite/config.toml
+      path: ''
+  label: test select
