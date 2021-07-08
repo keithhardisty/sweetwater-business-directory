@@ -19,7 +19,7 @@ name = "Contact"
 weight = 1
 [[menu.main]]
 URL = "tools"
-name = "tools"
+name = "Companies"
 weight = 2
 [outputs]
 home = ["HTML", "AMP", "RSS", "JSON"]
