@@ -1,12 +1,13 @@
 ---
 tools:
-- title: Photography
+- title: Real Estate
   tool:
-  - company: Kat Schaper Photography
-    name: Kat Schaper
-    description: Special pricing for Sweetwater families.
-    link: http://www.KatSchaperPhotography.com
-    email: Kat@KatSchaperPhotography.com
+  - company: Century 21
+    name: Shannon and Tyler Mangin
+    description: Realty Services and free market analysis every 6 months for Sweetwater
+      neighbors.
+    link: http://www.shannonsellsaustin.com
+    phone: 512-897-4349
 - title: Business Services
   tool:
   - company: BlueStar Case Solutions
@@ -88,6 +89,13 @@ tools:
     description: Helping families with investment strategies and retirement planning.
     link: http://www.EdwardJones.com/chantell-gonzales
     phone: 512-263-2426
+- title: Photography
+  tool:
+  - company: Kat Schaper Photography
+    name: Kat Schaper
+    description: Special pricing for Sweetwater families.
+    link: http://www.KatSchaperPhotography.com
+    email: Kat@KatSchaperPhotography.com
 menu:
   main:
     name: tools yml
