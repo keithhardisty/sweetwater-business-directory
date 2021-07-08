@@ -1,9 +1,8 @@
 ---
-title: "Contact Us"
-draft: false
-description : "this is meta description"
-image: "images/contact.svg"
-layout : contact
----
+title: Contact
+description: List a business in the Sweetwater Community of Austin, Texas.
+image: images/contact.svg
+layout: contact
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor.
+---
+Looking to get your business listed? Notice a listing that needs an update?
