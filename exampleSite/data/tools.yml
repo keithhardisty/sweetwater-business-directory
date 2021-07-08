@@ -1,12 +1,12 @@
 ---
 tools:
-- title: Legal/Finance
+- title: Photography
   tool:
-  - company: Edward Jones Financial Planning
-    name: Chantell Gonzales
-    description: Helping families with investment strategies and retirement planning.
-    link: http://www.EdwardJones.com/chantell-gonzales
-    phone: 512-263-2426
+  - company: Kat Schaper Photography
+    name: Kat Schaper
+    description: Special pricing for Sweetwater families.
+    link: http://www.KatSchaperPhotography.com
+    email: Kat@KatSchaperPhotography.com
 - title: Business Services
   tool:
   - company: BlueStar Case Solutions
@@ -81,6 +81,13 @@ tools:
     name: Dean & Jessica Luntz
     description: Window clings for kids!
     link: https://www.jesplay.com/
+- title: Legal/Finance
+  tool:
+  - company: Edward Jones Financial Planning
+    name: Chantell Gonzales
+    description: Helping families with investment strategies and retirement planning.
+    link: http://www.EdwardJones.com/chantell-gonzales
+    phone: 512-263-2426
 menu:
   main:
     name: tools yml
