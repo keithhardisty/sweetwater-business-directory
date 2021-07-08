@@ -21,6 +21,7 @@
           {{range .Params.Tags }} <a href="{{ `tags/` | relLangURL}}{{ . | urlize | lower }}">#{{ . | title }}</a>,  {{ end }}
         </div>
       </div>
+      <!-- Comment out related posts
       <div class="col-lg-8 mx-auto block shadow">
         {{ $related := .Site.RegularPages.Related . | first 5 }}
         {{ with $related }}
@@ -32,6 +33,7 @@
         </ul>
         {{ end }}
       </div>
+      -->
       {{ if .Site.DisqusShortname}}
       <div class="col-lg-8 mx-auto block shadow">
         <!-- comments -->
