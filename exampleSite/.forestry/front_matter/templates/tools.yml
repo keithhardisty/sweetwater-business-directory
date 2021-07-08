@@ -47,3 +47,4 @@ fields:
       config:
         required: false
       label: phone
+      description: 'Format: 123-456-7890'
