@@ -1,5 +1,11 @@
 ---
 tools:
+- title: Infant/Children
+  tool:
+  - company: JesPlay
+    name: Dean & Jessica Luntz
+    description: Window clings for kids!
+    link: https://www.jesplay.com/
 - title: Home Services
   tool:
   - company: Live Love Thanks
