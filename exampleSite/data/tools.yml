@@ -5,20 +5,20 @@ tools:
   - name: Shiloh A. Coleman
     link: http://www.austinadvocates.com
     email: shiloh@austinadvocates.com
-    phone: "5125052314"
+    phone: 512-505-2314
     company: Business Attorney
     description: Helping small businesses and startups with their legal matters.
-  - name: Morgan Lawrence
-    link: https://theraveagency.com/
-    email: morgan@theraveagency.com
-    company: THE rAVe Agency
-    description: Public relations, marketing and consulting firm.
   - name: Danny S. Brown
     link: https://www.dannysbrown.com/
     email: dannysbrown@gmail.com
     company: Danny S. Brown
     description: Sales & Marketing Consultant, Executive Coach and Public Speaking
       Coach.
+  - name: Morgan Lawrence
+    link: https://theraveagency.com/
+    email: morgan@theraveagency.com
+    company: THE rAVe Agency
+    description: Public relations, marketing and consulting firm.
 - title: Education
   tool:
   - company: Math Tutoring
