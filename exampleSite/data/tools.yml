@@ -8,9 +8,11 @@ tools:
     phone: "5125052314"
     company: Business Attorney
     description: Helping small businesses and startups with their legal matters.
-  - name: THE rAVe Agency
+  - name: Morgan Lawrence
     link: https://theraveagency.com/
     email: morgan@theraveagency.com
+    company: THE rAVe Agency
+    description: Public relations, marketing and consulting firm.
 - title: Dev Tools
   tool:
   - name: Git
