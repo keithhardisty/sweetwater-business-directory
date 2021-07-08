@@ -26,7 +26,7 @@ home = ["HTML", "AMP", "RSS", "JSON"]
 [params]
 author = "Keith Hardisty"
 contact_form_action = "#"
-copyright = "&copy; {{ dateFormat \"2006\" now }} [Keith Hardisty](https://keithhardisty.com) All Rights Reserved"
+copyright = "[Keith Hardisty](https://keithhardisty.com) All Rights Reserved"
 description = "A directory of businesses from the Sweetwater neighborhood in the Bee Cave/Austin/Spicewood, Texas area."
 google_tag_manager = "GTM-MSRLBD3"
 home = "Home"
