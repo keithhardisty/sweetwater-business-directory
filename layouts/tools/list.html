@@ -18,7 +18,7 @@
               {{ range .tool}}
               <div class="col-md-6 mb-4">
                 <div class="card border-0 shadow">
-                  <img src="{{ .image | relURL }}" alt="{{ .name | markdownify }}" class="card-img-top">
+                  {{ if .image }}<img src="{{ .image | relURL }}" alt="{{ .name | markdownify }}" class="card-img-top">{{ end }}
                   <div class="card-body">
                     <h4 class="h5 mb-4"><a class="text-dark" href="{{ .link | safeURL }}">{{ .company | markdownify }}</a></h4>
                     {{ if .name }}
@@ -33,6 +33,7 @@
                     {{ if .phone }}
                       <a href="tel:{{ .phone }}">{{ .phone }}</a>
                     {{ end }}
+                    <br>
                     {{ if .link }}
                     <a href="{{ .link | safeURL }}" class="btn btn-primary">Visit Site</a>
                     {{ end }}
