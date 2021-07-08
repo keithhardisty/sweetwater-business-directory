@@ -1,20 +1,12 @@
 ---
 tools:
-- title: Infant/Children
+- title: Legal/Finance
   tool:
-  - company: JesPlay
-    name: Dean & Jessica Luntz
-    description: Window clings for kids!
-    link: https://www.jesplay.com/
-- title: Home Services
-  tool:
-  - company: Live Love Thanks
-    name: Jenny Brown
-    description: Helping purpose-driven women to permanently eliminate clutter so
-      that they can become 10x more decisive and step more into their purpose and
-      contribution.
-    link: https://livelovethanks.com/
-    email: jenny@livelovethanks.com
+  - company: Edward Jones Financial Planning
+    name: Chantell Gonzales
+    description: Helping families with investment strategies and retirement planning.
+    link: http://www.EdwardJones.com/chantell-gonzales
+    phone: 512-263-2426
 - title: Business Services
   tool:
   - company: BlueStar Case Solutions
@@ -74,6 +66,21 @@ tools:
       mineral-based and long- lasting. And always come with 100% Love It Guarantee.
     link: http://www.thedivadonna.com/
     email: YouniqueByDivaDonna@gmail.com
+- title: Home Services
+  tool:
+  - company: Live Love Thanks
+    name: Jenny Brown
+    description: Helping purpose-driven women to permanently eliminate clutter so
+      that they can become 10x more decisive and step more into their purpose and
+      contribution.
+    link: https://livelovethanks.com/
+    email: jenny@livelovethanks.com
+- title: Infant/Children
+  tool:
+  - company: JesPlay
+    name: Dean & Jessica Luntz
+    description: Window clings for kids!
+    link: https://www.jesplay.com/
 menu:
   main:
     name: tools yml
