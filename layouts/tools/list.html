@@ -20,14 +20,22 @@
                 <div class="card border-0 shadow">
                   <img src="{{ .image | relURL }}" alt="{{ .name | markdownify }}" class="card-img-top">
                   <div class="card-body">
-                    <h4 class="h5 mb-4"><a class="text-dark" href="{{ .link | safeURL }}">{{ .name | markdownify }}</a></h4>
+                    <h4 class="h5 mb-4"><a class="text-dark" href="{{ .link | safeURL }}">{{ .company | markdownify }}</a></h4>
+                    {{ if .name }}
+                      <p>{{ .name }}</p>
+                    {{ end }}
+                    {{ if .description }}
+                      <p>{{ .description }}</p>
+                    {{ end }}
                     {{ if .email }}
                       <p>{{ .email }}</p>
                     {{ end }}
                     {{ if .phone }}
                       <a href="tel:{{ .phone }}">{{ .phone }}</a>
                     {{ end }}
+                    {{ if .link }}
                     <a href="{{ .link | safeURL }}" class="btn btn-primary">Visit Site</a>
+                    {{ end }}
                   </div>
                 </div>
               </div>
