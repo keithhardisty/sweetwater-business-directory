@@ -1,126 +1,252 @@
 ---
 tools:
-- title: Business Services
-  tool:
-  - company: BlueStar Case Solutions
-    name: Jeremy Schaper
-    description: Electronic discovery and Cyber Security.
-    link: https://www.bluestarcs.com/
-    email: jschaper@bluestarcs.com
-  - name: Shiloh A. Coleman
-    link: http://www.austinadvocates.com
-    email: shiloh@austinadvocates.com
-    phone: 512-505-2314
-    company: Business Attorney
-    description: Helping small businesses and startups with their legal matters.
-  - name: Danny S. Brown
-    link: https://www.dannysbrown.com/
-    email: dannysbrown@gmail.com
-    company: Danny S. Brown
-    description: Sales & Marketing Consultant, Executive Coach and Public Speaking
-      Coach.
-  - company: Executive Coaching
-    name: Gregory Short
-    description: Career development and coaching for Senior Director to C-Level executives.
-    link: https://www.gregoryshort.com/
-    email: greg@theshorts.net
-  - name: Morgan Lawrence
-    link: https://theraveagency.com/
-    email: morgan@theraveagency.com
-    company: THE rAVe Agency
-    description: Public relations, marketing and consulting firm.
-- title: Education
-  tool:
-  - company: Math Tutoring
-    name: Carol Edgar
-    description: Certified 6 - 12 grade Math Teacher for the state of Texas available
-      for home tutoring.
-    email: cedgar737@gmail.com
-  - company: Spanish Tutoring
-    name: Michelle Craft
-    description: Spanish tutoring for Levels 1 & 2
-    email: mcraft@eanesisd.net
-  - company: West Austin Dance Academy
-    name: Amy Swift Reynolds
-    description: Dance School in the Galleria.
-    link: https://westaustindance.com/
-    email: Amyswift@westaustindance.com
-    phone: 512-263-2277
-  - company: Simply Fabulous Bakery
-    name: Michelle Carruth
-    description: Baking School
-    link: https://www.simplyfabulousbakery.net/
-    email: Michelle@simplyfabulousbakery.net
-    phone: 512-808-9756
-  - company: KLA Schools of Sweetwater
-    name: Sanam Madampath
-    description: A Reggio Emilia Preschool for children 8 weeks to PreK, a Summer
-      Camp, and after school care.
-    link: https://www.klaschoolssweetwater.com/
-    email: sanam@klaschools.com
-    phone: 512-900-3581
-- title: Fashion
-  tool:
-  - company: Stella & Dot
-    name: Stephanie Budai
-    description: Jewelry, Clothing and Handbags/In home style sessions.
-    link: https://www.stelladot.com/sites/sbudai
-    email: jewelsbudai@gmail.com
-    phone: 903-880-7706
-- title: Fitness
-  tool:
-  - company: Split Fit ATX
-    name: Tec and Heather Nanni
-    description: Personal training, nutritional coaching, online programming
-    link: https://www.facebook.com/splitfitatx/
-    email: Tec@splitfitatx.com
-- title: Health/Beauty
-  tool:
-  - company: Younique Skin Products
-    name: Donna Kobayashi
-    description: Younique cosmetics & skin care are hypoallergenic, chemical and cruelty-free,
-      mineral-based and long- lasting. And always come with 100% Love It Guarantee.
-    link: http://www.thedivadonna.com/
-    email: YouniqueByDivaDonna@gmail.com
-- title: Home Services
-  tool:
-  - company: Live Love Thanks
-    name: Jenny Brown
-    description: Helping purpose-driven women to permanently eliminate clutter so
-      that they can become 10x more decisive and step more into their purpose and
-      contribution.
-    link: https://livelovethanks.com/
-    email: jenny@livelovethanks.com
-- title: Infant/Children
-  tool:
-  - company: JesPlay
-    name: Dean & Jessica Luntz
-    description: Window clings for kids!
-    link: https://www.jesplay.com/
-- title: Legal/Finance
-  tool:
-  - company: Edward Jones Financial Planning
-    name: Chantell Gonzales
-    description: Helping families with investment strategies and retirement planning.
-    link: http://www.EdwardJones.com/chantell-gonzales
-    phone: 512-263-2426
-- title: Photography
-  tool:
-  - company: Kat Schaper Photography
-    name: Kat Schaper
-    description: Special pricing for Sweetwater families.
-    link: http://www.KatSchaperPhotography.com
-    email: Kat@KatSchaperPhotography.com
-- title: Real Estate
-  tool:
-  - company: Century 21
-    name: Shannon and Tyler Mangin
-    description: Realty Services and free market analysis every 6 months for Sweetwater
-      neighbors.
-    link: http://www.shannonsellsaustin.com
-    phone: 512-897-4349
-menu:
-  main:
-    name: tools yml
-    URL: tools
-    weight: 1
+  - title: Business Services
+    tool:
+    - company: THE rAVe Agency
+      name: Morgan Lawrence
+      description: Public relations, marketing and consulting firm
+      link: https://theraveagency.com/
+      email: morgan@theraveagency.com
+    - company: Danny S. Brown
+      name: Danny S. Brown
+      description: Sales & Marketing Consultant, Executive Coach and Public Speaking Coach
+      link: https://www.dannysbrown.com/
+      email: dannysbrown@gmail.com
+    - company: Executive Coaching
+      name: Gregory Short
+      description: Career development and coaching for Senior Director to C-Level executives.
+      link: https://www.gregoryshort.com/
+      email: greg@theshorts.net
+    - company: Business Attorney
+      name: Shiloh A. Coleman
+      description: Helping small businesses and startups with their legal matters.
+      link: http://www.austinadvocates.com
+      email: shiloh@austinadvocates.com
+      phone: 512-505-2314
+    - company: BlueStar Case Solutions
+      name: Jeremy Schaper
+      description: Electronic discovery and Cyber Security.
+      link: https://www.bluestarcs.com/
+      email: jschaper@bluestarcs.com
+  - title: Education
+    - company: Math Tutoring
+      name: Carol Edgar
+      description: Certified 6 - 12 grade Math Teacher for the state of Texas available for home tutoring.
+      email: cedgar737@gmail.com
+    - company: Spanish Tutoring
+      name: Michelle Craft
+      description: Spanish tutoring for Levels 1 & 2
+      email: mcraft@eanesisd.net
+    - company: West Austin Dance Academy
+      name: Amy Swift Reynolds
+      description: Dance School in the Galleria.
+      link: https://westaustindance.com/
+      email: Amyswift@westaustindance.com
+      phone: 512-263-2277
+    - company: Simply Fabulous Bakery
+      name: Michelle Carruth
+      description: Baking School
+      link: https://www.simplyfabulousbakery.net/
+      email: Michelle@simplyfabulousbakery.net
+      phone: 512-808-9756
+    - company: KLA Schools of Sweetwater
+      name: Sanam Madampath
+      description: A Reggio Emilia Preschool for children 8 weeks to PreK, a Summer Camp, and after school care.
+      link: https://www.klaschoolssweetwater.com/
+      email: sanam@klaschools.com
+      phone: 512-900-3581
+  - title: Fashion
+    - company: Stella & Dot
+      name: Stephanie Budai
+      description: Jewelry, Clothing and Handbags/In home style sessions
+      link: https://www.stelladot.com/sites/sbudai
+      email: jewelsbudai@gmail.com
+      phone: 903-880-7706
+  - title: Fitness
+    - company: Split Fit ATX
+      name: Tec and Heather Nanni
+      description: Personal training, nutritional coaching, online programming splitfitatx.com
+      link: https://www.facebook.com/splitfitatx/
+      email: Tec@splitfitatx.com
+    - company: Pruvit
+      name: Abby Canter
+      description: Pure Therapeutic Exogenous Ketones for improved energy, focus, clarity, mood & sleep. Muscle preservation, decreased inflammation, fat loss. Safe from womb to tomb.
+      link: https://abbycan.experienceketo.com/
+      phone: 469-247-1998
+    - company: Your Yogability
+      name: Phoebe Polakovic
+      description: Private Yoga Instruction with focus on Chronic Health conditions.
+      link: http://www.phoebedyoga.com/
+  - title: Health/Beauty
+    - company: Younique Skin Products
+      name: Donna Kobayashi
+      description: Younique cosmetics & skin care are hypoallergenic, chemical and cruelty-free, mineral-based and long-lasting. And always come with 100% Love It Guarantee.
+      link: http://www.thedivadonna.com/
+      email: YouniqueByDivaDonna@gmail.com
+    - company: Massage Health
+      name: Christine Merrill
+      description: Nationally Certified, Texas Licensed Massage Therapist
+      phone: 630-750-6238
+    - company: Hey Nanabread
+      name: Jeanne Hunt
+      description: Handmade quilted cosmetic bags made from coordinating designer quilting prints (inside & out) from the hottest quilt shops in the Austin area. Bags are machine quilted with a lightweight organic quilt batting to make each bag more luxurious.
+      link: https://www.etsy.com/shop/HeyNanabread
+      email: heynanabread@yahoo.com
+    - company: Rodan+Fields, Monat, Poppy Event Design
+      name: Kristi Gilbert
+      description: Skincare and Haircare products.
+      phone: 312-502-7600
+    - company: Rodan+Fields
+      name: Winifred Yu
+      description: Rodan+Fields provides skincare products for men and women.
+      link: https://winifredyu.myrandf.com/
+      email: winimom3@gmail.com
+    - company: BeautyCounter
+      name: Karen Bryant
+      description: High performing , safer skin, hair, kids, baby products and make-up.
+      link: http://www.beautycounter.com/karenbryant
+    - company: Nuskin
+      name: Christy Wong (Cyant)
+      description: Beautiful skin and body wellness for the whole family.
+      link: http://cyant.mynuskin.com
+      email: cyantnuskin@gmail.com
+      phone: 713-478-8515
+    - company: Mary Kay Cosmetics
+      name: Anitra Torns
+      description: Mentor, Teach and Sell Skincare and Cosmetics
+      link: https://www.marykay.com/anitratorns
+      phone: 504-296-9279
+  - title: Home Services
+    - company: Live Love Thanks
+      name: Jenny Brown
+      description: Helping purpose-driven women to permanently eliminate clutter so that they can become 10x more decisive and step more into their purpose and contribution.
+      link: https://livelovethanks.com/
+      email: jenny@livelovethanks.com
+    - company: Pampered Chef
+      name: Coretta Jenkins
+      description:
+      link: http://www.pamperedchef.biz/Corettaj
+    - company: Capital Remodeling & Design
+      name: Brett Denney
+      description: Whole Home Remodeling Service
+      email: CapitalRemodeling@yahoo.com
+      phone: 512-557-3009
+    - company: Harmonized Home by Sherry
+      name: Sherry Wilkinson
+      description: Professional Organizing Service - We simply bring order and harmony within your home. Special rates for Sweetwater residence and complimentary consultations!
+      link: https://www.harmonizedhomebysherry.com/
+      phone: 512-893-3400
+    - company: Hill Country Fresh Cleaning
+      name: Emmanuel Aparicio
+      description: Hill Country Fresh Cleaning Service
+      link: http://hillcountryfreshcleaning.com
+      email: Hillcountryfreshcleaning@gmail.com
+      phone: 512-560-6756
+    - company: Austin Yard Guy
+      name: Brett Bauer
+      description: Regular lawn maintenance, full landscape maintenance and fertilization/weed control.
+      link: https://www.theaustinyardguys.com/
+      email: help@theaustinyardguy.com
+      phone: 512-435-9780
+    - company: Sweetwater Lawn Care
+      name: Marc Freeman
+      description: Regular lawn maintenance and winterization.
+      email: mbfreeman37@yahoo.com
+      phone: 903-314-0635
+  - title: Infant/Children
+    - company: JesPlay
+      name: Dean & Jessica Luntz
+      description: Window clings for kids!
+      link: https://www.jesplay.com/
+      phone: 954-579-4581
+    - company: The Teething Egg
+      name: Dean & Jessica Luntz
+      description: Teething toys/accessories for babies
+      link: https://www.theteethingegg.com/
+      email: jluntz@theteethingegg.com
+      phone: 954-579-4581
+  - title: Legal/Finance
+    - company: Edward Jones Financial Planning
+      name: Chantell Gonzales
+      description: Helping families with investment strategies and retirement planning.
+      link: http://www.EdwardJones.com/chantell-gonzales
+      phone: 512-263-2426
+    - company: American Business
+      name: David Gastwirth
+      description: Independent Insurance Specialist—Life, Disability and Long Term Care
+      email: Dgastwirth@americanbusiness.com
+      phone: 512-212-1117
+    - company: MastenLojko LLC
+      name: Ryan Masten
+      description: Money Manager / Alternative Investments / CFTC Regulated Commodity Trading Advisor
+      link: https://mastenlojko.com/
+      email: rmasten@mastenlojko.com
+      phone: 929-314-4605
+    - company: Hill Country Mortgages
+      name: Jonathan Sarver
+      description: Independent Mortgage Broker
+      link: http://hillcountrymortgages.com/
+      email: Jonathan@hillcountrymortgages.com
+      phone: 512-487-4503
+    - company: Farmers Insurance
+      name: David Wylie
+      description: All Lines Personal and Business Insurance, Financial Services (IRAs, 529 Plans, SEP, Annuities, etc.)
+      email: dwylie@farmersagent.com
+      phone: 512-987-7719
+    - company: Martin Wealth Management, LLC
+      name: Anthony Martin
+      description: Wealth Management: Comprehensive Financial Planning, Asset Management, Tax Planning and CPA Coordination, Estate Planning, Cashflow Management, Risk Management, and Value-added Services
+      link: https://www.martinwealthmanagement.net/
+      email: anthony.martin@lpl.com
+      phone: 512-347-0046
+    - company: EdwardJones Investments
+      name: Tony Stough CRPC
+      description: Financial Planning and Investments
+      link: http://www.EdwardJones.com/tony-stough
+      email: tony.stough@edwardjones.com
+  - title: Photography
+    - company: Kat Schaper Photography
+      name: Kat Schaper
+      description: Special pricing for Sweetwater families.
+      link: http://www.KatSchaperPhotography.com
+      email: Kat@KatSchaperPhotography.com
+    - company: Kristen Beccia Photography
+      name: Kristen Beccia Schneider
+      description: Family and newborn photographer
+      link: https://www.kristenbeccia.com/
+      email: Kristen@kristenbeccia.com
+      phone: 323-710-7754
+    - company: Jill Simonie Photography
+      name: Jill Simonie
+      description: Family and Newborn Photos
+      link: http://jillsimonie.com/
+      email: jill@jillsimonie.com
+  - title: Real Estate
+    - company: Century 21
+      name: Shannon and Tyler Mangin
+      description: Realty Services and free market analysis every 6 months for Sweetwater neighbors.
+      link: http://www.shannonsellsaustin.com
+      phone: 512-897-4349
+    - company: Heart & Sold Austin Group (Keller Williams Realty)
+      name: Chadwin Barley
+      description: Lakeway / Bee Cave Specialist, Certified Luxury Home Marketing Specialist
+      link: https://heartandsoldgroup.com/
+      email: chadwin@heartandsoldaustin.com
+      phone: 512-589-3251
+    - company: Coral Shores Padre / Airbnb vacation rentals
+      name: Susan Thomas
+      description: Short term vacation rentals on North Padre Island, Corpus Christi and South Padre Island
+      link: https://airbnb.com/h/padre-island-beach-condo-vacation-rental-corpus-christi
+      email: suekthomas@me.com
+      phone: 310-701-3647
+    - company: The Seely Group
+      name: Dallas and Amy Seely
+      description: Real Estate Services
+      link: https://seelyproperties.com/
+      email: dallas@seelyproperties.com
+      phone: 512-777-9530
+    - company: Twelve Rivers Realty
+      name: Casey Blancett
+      description: Realtor-buying/selling/leasing.
+      link: https://www.twelveriversrealty.com/
+      phone: 512-650-5057
