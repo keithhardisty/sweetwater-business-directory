@@ -29,6 +29,7 @@ tools:
       link: https://www.bluestarcs.com/
       email: jschaper@bluestarcs.com
   - title: Education
+    tool:
     - company: Math Tutoring
       name: Carol Edgar
       description: Certified 6 - 12 grade Math Teacher for the state of Texas available for home tutoring.
@@ -56,6 +57,7 @@ tools:
       email: sanam@klaschools.com
       phone: 512-900-3581
   - title: Fashion
+    tool:
     - company: Stella & Dot
       name: Stephanie Budai
       description: Jewelry, Clothing and Handbags/In home style sessions
@@ -63,6 +65,7 @@ tools:
       email: jewelsbudai@gmail.com
       phone: 903-880-7706
   - title: Fitness
+    tool:
     - company: Split Fit ATX
       name: Tec and Heather Nanni
       description: Personal training, nutritional coaching, online programming splitfitatx.com
@@ -78,6 +81,7 @@ tools:
       description: Private Yoga Instruction with focus on Chronic Health conditions.
       link: http://www.phoebedyoga.com/
   - title: Health/Beauty
+    tool:
     - company: Younique Skin Products
       name: Donna Kobayashi
       description: Younique cosmetics & skin care are hypoallergenic, chemical and cruelty-free, mineral-based and long-lasting. And always come with 100% Love It Guarantee.
@@ -117,6 +121,7 @@ tools:
       link: https://www.marykay.com/anitratorns
       phone: 504-296-9279
   - title: Home Services
+    tool:
     - company: Live Love Thanks
       name: Jenny Brown
       description: Helping purpose-driven women to permanently eliminate clutter so that they can become 10x more decisive and step more into their purpose and contribution.
@@ -154,6 +159,7 @@ tools:
       email: mbfreeman37@yahoo.com
       phone: 903-314-0635
   - title: Infant/Children
+    tool:
     - company: JesPlay
       name: Dean & Jessica Luntz
       description: Window clings for kids!
@@ -166,6 +172,7 @@ tools:
       email: jluntz@theteethingegg.com
       phone: 954-579-4581
   - title: Legal/Finance
+    tool:
     - company: Edward Jones Financial Planning
       name: Chantell Gonzales
       description: Helping families with investment strategies and retirement planning.
@@ -205,6 +212,7 @@ tools:
       link: http://www.EdwardJones.com/tony-stough
       email: tony.stough@edwardjones.com
   - title: Photography
+    tool:
     - company: Kat Schaper Photography
       name: Kat Schaper
       description: Special pricing for Sweetwater families.
@@ -222,6 +230,7 @@ tools:
       link: http://jillsimonie.com/
       email: jill@jillsimonie.com
   - title: Real Estate
+    tool:
     - company: Century 21
       name: Shannon and Tyler Mangin
       description: Realty Services and free market analysis every 6 months for Sweetwater neighbors.
