@@ -22,7 +22,9 @@
                   <div class="card-body">
                     <h4 class="h5 mb-4"><a class="text-dark" href="{{ .link | safeURL }}">{{ .name | markdownify }}</a></h4>
                     <a href="{{ .link | safeURL }}" class="btn btn-primary">Visit Site</a>
-                    <p>Phone: {{ .phone }}</p>
+                    {{ if .phone }}
+                      <p>Phone: {{ .phone }}</p>
+                    {{ end }}
                   </div>
                 </div>
               </div>
