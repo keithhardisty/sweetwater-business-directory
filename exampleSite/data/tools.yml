@@ -26,3 +26,8 @@ tools:
     company: Danny S. Brown
     description: Sales & Marketing Consultant, Executive Coach and Public Speaking
       Coach.
+menu:
+  main:
+    name: tools yml
+    URL: tools
+    weight: 1
