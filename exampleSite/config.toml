@@ -21,7 +21,7 @@ home = "Home"
 logo = ""
 [params.banner]
 bgImage = "images/banner/banner-bg.svg"
-image = "images/banner/illustration.svg"
+image = "/images/work-from-home.png"
 title = "Support your neighbors, friends, and local businesses"
 [params.cookies]
 enable = false
