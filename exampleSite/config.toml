@@ -1,4 +1,4 @@
-baseURL = "sweetwater-business-directory.netlify.com"
+baseURL = "sweetwater-business-directory.netlify.app"
 disqusShortname = ""
 languageCode = "en-us"
 paginate = "5"
