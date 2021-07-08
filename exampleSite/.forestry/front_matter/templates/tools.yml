@@ -22,3 +22,8 @@ fields:
     - type: text
       name: link
       label: link
+    - name: email
+      type: text
+      config:
+        required: false
+      label: email
