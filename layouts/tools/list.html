@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <div class="nav nav-tab flex-column" role="tablist" aria-orientation="horizontal">
+        <div class="nav nav-tab flex-column" role="tablist" aria-orientation="vertical">
           {{ range $index, $elemen:= .Site.Data.tools.tools }}
           <a class="nav-link {{ if eq $index 0}} active {{ end }}" data-toggle="pill" href="#{{.title | urlize}}" role="tab">{{ .title }}</a>
           {{ end }}
@@ -28,7 +28,7 @@
                       <p>{{ .description }}</p>
                     {{ end }}
                     {{ if .email }}
-                      <p>{{ .email }}</p>
+                      <a href = "mailto:{{ .email }}">{{ .email }}</a>
                     {{ end }}
                     {{ if .phone }}
                       <a href="tel:{{ .phone }}">{{ .phone }}</a>
