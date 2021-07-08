@@ -13,60 +13,8 @@ tools:
     email: morgan@theraveagency.com
     company: THE rAVe Agency
     description: Public relations, marketing and consulting firm.
-- title: Dev Tools
-  tool:
-  - name: Git
-    image: "/images/tools/Git.png"
-    link: https://git-scm.com/
-  - name: Atom
-    image: "/images/tools/Atom.png"
-    link: https://atom.io/
-  - name: Notepad ++
-    image: "/images/tools/Notepad.png"
-    link: https://notepad-plus-plus.org/
-  - name: Sublime Text
-    image: "/images/tools/sublime.png"
-    link: https://www.sublimetext.com/
-  - name: Visual Studio Code
-    image: "/images/tools/vs-code.png"
-    link: https://code.visualstudio.com/
-- title: Design Tools
-  tool:
-  - name: Sketch
-    image: "/images/tools/sketch.png"
-    link: https://www.sketch.com/
-  - name: Adobe Illustrator
-    image: "/images/tools/illustrator.png"
-    link: https://www.adobe.com/products/illustrator.html
-  - name: Invision
-    image: "/images/tools/invision.png"
-    link: https://www.invisionapp.com/studio
-  - name: Adobe XD
-    image: "/images/tools/xd.png"
-    link: https://www.adobe.com/products/xd.html
-  - name: Figma
-    image: "/images/tools/figma.png"
-    link: https://www.figma.com/
-- title: Digital Marketing Tools
-  tool:
-  - name: Mailchimp
-    image: "/images/tools/MailChimp.jpg"
-    link: https://mailchimp.com/
-  - name: Buffer
-    image: "/images/tools/Buffer.jpg"
-    link: https://buffer.com/
-  - name: Bitly Link
-    image: "/images/tools/Bitly.jpg"
-    link: https://bitly.com/
-  - name: Hotjar
-    image: "/images/tools/Hotjar.jpg"
-    link: https://www.hotjar.com/
-  - name: Ahrefs
-    image: "/images/tools/Ahrefs.jpg"
-    link: https://ahrefs.com/
-  - name: Google Trends
-    image: "/images/tools/GoogleTrends.jpg"
-    link: https://trends.google.com/trends/
-  - name: Google Analytics
-    image: "/images/tools/Google-Analytics.jpg"
-    link: https://analytics.google.com/analytics/web
+  - name: Danny S. Brown
+    link: https://www.dannysbrown.com/
+    email: dannysbrown@gmail.com
+    company: Danny S. Brown
+    description: Sales & Marketing Consultant, Executive Coach and Public Speaking Coach.
