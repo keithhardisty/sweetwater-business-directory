@@ -6,18 +6,24 @@
       <div class="col-lg-5">
         <h2 class="mb-4">{{ .Title | markdownify }}</h2>
         <div class="content">{{ .Content }}</div>
-        <form method="POST" action="{{ .Site.Params.contact_form_action | safeURL}}" class="row">
+        <form name="contact" class="row" netlify>
           <div class="col-md-6">
-            <input type="text" class="form-control mb-4" placeholder="Name" name="name" id="name">
+            <input type="text" class="form-control mb-4" placeholder="Your name" name="name" id="name" required>
           </div>
           <div class="col-md-6">
-            <input type="email" class="form-control mb-4" placeholder="Email" name="email" id="email">
+            <input type="company" class="form-control mb-4" placeholder="Company" name="company" id="company" >
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control mb-4" placeholder="Email" name="email" id="email" required >
+          </div>
+          <div class="col-md-6">
+            <input type="tel" class="form-control mb-4" placeholder="Phone" name="phone" id="phone">
           </div>
           <div class="col-12">
-            <input type="text" class="form-control mb-4" placeholder="Subject" name="subject" id="subject">
+            <input type="text" class="form-control mb-4" placeholder="Website" name="website" id="website">
           </div>
           <div class="col-12">
-            <textarea name="message" id="message" class="form-control mb-4" placeholder="Type You Message Here"
+            <textarea name="message" id="message" class="form-control mb-4" placeholder="Description of business/service"
               rows="5"></textarea>
           </div>
           <div class="col-12">
