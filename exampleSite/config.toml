@@ -6,21 +6,17 @@ summaryLength = "10"
 theme = "northendlab-hugo"
 title = "Sweetwater Business Directory"
 [[menu.footer]]
-URL = "contact"
-name = "Contact"
-weight = 1
+URL = "tools"
+name = "tools"
+weight = 2
 [[menu.footer]]
-URL = "tools"
-name = "tools"
-weight = 2
-[[menu.main]]
 URL = "contact"
 name = "Contact"
 weight = 1
 [[menu.main]]
-URL = "tools"
-name = "tools"
-weight = 2
+URL = "contact"
+name = "Contact"
+weight = 1
 [outputs]
 home = ["HTML", "AMP", "RSS", "JSON"]
 [params]
