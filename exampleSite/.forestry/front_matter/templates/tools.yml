@@ -27,3 +27,8 @@ fields:
       config:
         required: false
       label: email
+    - name: phone
+      type: text
+      config:
+        required: false
+      label: phone
