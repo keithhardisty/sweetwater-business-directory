@@ -1,13 +1,5 @@
 ---
 tools:
-- title: Real Estate
-  tool:
-  - company: Century 21
-    name: Shannon and Tyler Mangin
-    description: Realty Services and free market analysis every 6 months for Sweetwater
-      neighbors.
-    link: http://www.shannonsellsaustin.com
-    phone: 512-897-4349
 - title: Business Services
   tool:
   - company: BlueStar Case Solutions
@@ -41,7 +33,8 @@ tools:
   tool:
   - company: Math Tutoring
     name: Carol Edgar
-    description: Certified 6 - 12 grade Math Teacher for the state of Texas available for home tutoring.
+    description: Certified 6 - 12 grade Math Teacher for the state of Texas available
+      for home tutoring.
     email: cedgar737@gmail.com
   - company: Spanish Tutoring
     name: Michelle Craft
@@ -61,7 +54,8 @@ tools:
     phone: 512-808-9756
   - company: KLA Schools of Sweetwater
     name: Sanam Madampath
-    description: A Reggio Emilia Preschool for children 8 weeks to PreK, a Summer Camp, and after school care.
+    description: A Reggio Emilia Preschool for children 8 weeks to PreK, a Summer
+      Camp, and after school care.
     link: https://www.klaschoolssweetwater.com/
     email: sanam@klaschools.com
     phone: 512-900-3581
@@ -117,6 +111,14 @@ tools:
     description: Special pricing for Sweetwater families.
     link: http://www.KatSchaperPhotography.com
     email: Kat@KatSchaperPhotography.com
+- title: Real Estate
+  tool:
+  - company: Century 21
+    name: Shannon and Tyler Mangin
+    description: Realty Services and free market analysis every 6 months for Sweetwater
+      neighbors.
+    link: http://www.shannonsellsaustin.com
+    phone: 512-897-4349
 menu:
   main:
     name: tools yml
