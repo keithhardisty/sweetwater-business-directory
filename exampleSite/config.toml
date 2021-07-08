@@ -26,7 +26,7 @@ home = ["HTML", "AMP", "RSS", "JSON"]
 [params]
 author = "Keith Hardisty"
 contact_form_action = "#"
-copyright = "&copy; 2020 [Gethugothemes](https://gethugothemes.com) All Rights Reserved"
+copyright = "&copy; {{ dateFormat \"2006\" now }} [Keith Hardisty](https://keithhardisty.com) All Rights Reserved"
 description = "A directory of businesses from the Sweetwater neighborhood in the Bee Cave/Austin/Spicewood, Texas area."
 google_tag_manager = "GTM-MSRLBD3"
 home = "Home"
@@ -34,9 +34,9 @@ logo = ""
 [params.banner]
 bgImage = "images/banner/banner-bg.svg"
 image = "images/banner/illustration.svg"
-title = "Hi, I'm John Smith Doe. <br> I help people make the  worlds best software"
+title = "Support your neighbors, friends, and local businesses"
 [params.cookies]
-enable = true
+enable = false
 expire_days = 2
 [params.cta]
 description = "Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
