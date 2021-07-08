@@ -1,5 +1,5 @@
 +++
-type = "tools"
+type = ""
 [menu.footer]
 URL = "tools"
 name = "Companies"
