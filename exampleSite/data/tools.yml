@@ -1,5 +1,13 @@
 ---
 tools:
+- title: Fashion
+  tool:
+  - company: Stella & Dot
+    name: Stephanie Budai
+    description: Jewelry, Clothing and Handbags/In home style sessions.
+    link: https://www.stelladot.com/sites/sbudai
+    email: jewelsbudai@gmail.com
+    phone: "9038807706"
 - title: Education
   tool:
   - company: Math Tutoring
