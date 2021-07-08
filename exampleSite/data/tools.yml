@@ -1,20 +1,5 @@
 ---
 tools:
-- title: Fashion
-  tool:
-  - company: Stella & Dot
-    name: Stephanie Budai
-    description: Jewelry, Clothing and Handbags/In home style sessions.
-    link: https://www.stelladot.com/sites/sbudai
-    email: jewelsbudai@gmail.com
-    phone: "9038807706"
-- title: Education
-  tool:
-  - company: Math Tutoring
-    name: Carol Edgar
-    description: Certified 6 - 12 grade Math Teacher for the state of Texas available
-      for home tutoring.
-    email: cedgar737@gmail.com
 - title: Business Services
   tool:
   - name: Shiloh A. Coleman
@@ -34,6 +19,21 @@ tools:
     company: Danny S. Brown
     description: Sales & Marketing Consultant, Executive Coach and Public Speaking
       Coach.
+- title: Education
+  tool:
+  - company: Math Tutoring
+    name: Carol Edgar
+    description: Certified 6 - 12 grade Math Teacher for the state of Texas available
+      for home tutoring.
+    email: cedgar737@gmail.com
+- title: Fashion
+  tool:
+  - company: Stella & Dot
+    name: Stephanie Budai
+    description: Jewelry, Clothing and Handbags/In home style sessions.
+    link: https://www.stelladot.com/sites/sbudai
+    email: jewelsbudai@gmail.com
+    phone: "9038807706"
 menu:
   main:
     name: tools yml
