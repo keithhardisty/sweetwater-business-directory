@@ -2,10 +2,12 @@
 tools:
 - title: Business Services
   tool:
-  - name: Business Attorney
-    link: www.austinadvocates.com
+  - name: Shiloh A. Coleman
+    link: http://www.austinadvocates.com
     email: shiloh@austinadvocates.com
     phone: "5125052314"
+    company: Business Attorney
+    description: Helping small businesses and startups with their legal matters.
   - name: THE rAVe Agency
     link: https://theraveagency.com/
     email: morgan@theraveagency.com
