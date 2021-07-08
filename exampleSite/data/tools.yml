@@ -41,9 +41,30 @@ tools:
   tool:
   - company: Math Tutoring
     name: Carol Edgar
-    description: Certified 6 - 12 grade Math Teacher for the state of Texas available
-      for home tutoring.
+    description: Certified 6 - 12 grade Math Teacher for the state of Texas available for home tutoring.
     email: cedgar737@gmail.com
+  - company: Spanish Tutoring
+    name: Michelle Craft
+    description: Spanish tutoring for Levels 1 & 2
+    email: mcraft@eanesisd.net
+  - company: West Austin Dance Academy
+    name: Amy Swift Reynolds
+    description: Dance School in the Galleria.
+    link: https://westaustindance.com/
+    email: Amyswift@westaustindance.com
+    phone: 512-263-2277
+  - company: Simply Fabulous Bakery
+    name: Michelle Carruth
+    description: Baking School
+    link: https://www.simplyfabulousbakery.net/
+    email: Michelle@simplyfabulousbakery.net
+    phone: 512-808-9756
+  - company: KLA Schools of Sweetwater
+    name: Sanam Madampath
+    description: A Reggio Emilia Preschool for children 8 weeks to PreK, a Summer Camp, and after school care.
+    link: https://www.klaschoolssweetwater.com/
+    email: sanam@klaschools.com
+    phone: 512-900-3581
 - title: Fashion
   tool:
   - company: Stella & Dot
