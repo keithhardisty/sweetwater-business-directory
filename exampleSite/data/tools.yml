@@ -1,5 +1,12 @@
 ---
 tools:
+- title: Fitness
+  tool:
+  - company: Split Fit ATX
+    name: Tec and Heather Nanni
+    description: Personal training, nutritional coaching, online programming
+    link: https://www.facebook.com/splitfitatx/
+    email: Tec@splitfitatx.com
 - title: Business Services
   tool:
   - company: BlueStar Case Solutions
