@@ -13,12 +13,27 @@ fields:
     name: tool
     label: tool
     fields:
-    - type: text
-      name: name
-      label: name
     - type: file
       name: image
       label: image
+    - type: text
+      name: company
+      label: company
+    - name: name
+      type: text
+      config:
+        required: false
+      label: name
+      description: Name of Sweetwater contact
+    - name: description
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: description
     - type: text
       name: link
       label: link
