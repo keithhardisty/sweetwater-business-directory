@@ -1,5 +1,12 @@
 ---
 tools:
+- title: Education
+  tool:
+  - company: Math Tutoring
+    name: Carol Edgar
+    description: Certified 6 - 12 grade Math Teacher for the state of Texas available
+      for home tutoring.
+    email: cedgar737@gmail.com
 - title: Business Services
   tool:
   - name: Shiloh A. Coleman
@@ -17,4 +24,5 @@ tools:
     link: https://www.dannysbrown.com/
     email: dannysbrown@gmail.com
     company: Danny S. Brown
-    description: Sales & Marketing Consultant, Executive Coach and Public Speaking Coach.
+    description: Sales & Marketing Consultant, Executive Coach and Public Speaking
+      Coach.
