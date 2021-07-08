@@ -2,11 +2,11 @@
 tools:
 - title: Business Services
   tool:
-  - company: Executive Coaching
-    name: Gregory Short
-    description: Career development and coaching for Senior Director to C-Level executives.
-    link: https://www.gregoryshort.com/
-    email: greg@theshorts.net
+  - company: BlueStar Case Solutions
+    name: Jeremy Schaper
+    description: Electronic discovery and Cyber Security.
+    link: https://www.bluestarcs.com/
+    email: jschaper@bluestarcs.com
   - name: Shiloh A. Coleman
     link: http://www.austinadvocates.com
     email: shiloh@austinadvocates.com
@@ -19,6 +19,11 @@ tools:
     company: Danny S. Brown
     description: Sales & Marketing Consultant, Executive Coach and Public Speaking
       Coach.
+  - company: Executive Coaching
+    name: Gregory Short
+    description: Career development and coaching for Senior Director to C-Level executives.
+    link: https://www.gregoryshort.com/
+    email: greg@theshorts.net
   - name: Morgan Lawrence
     link: https://theraveagency.com/
     email: morgan@theraveagency.com
