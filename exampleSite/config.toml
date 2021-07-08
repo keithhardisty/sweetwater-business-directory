@@ -6,27 +6,31 @@ summaryLength = "10"
 theme = "northendlab-hugo"
 title = "Sweetwater Business Directory"
 [[menu.footer]]
-URL = "tools"
-name = "tools"
-weight = 2
-[[menu.footer]]
 URL = "contact"
 name = "Contact"
 weight = 1
+[[menu.footer]]
+URL = "tools"
+name = "tools"
+weight = 2
 [[menu.main]]
 URL = "contact"
 name = "Contact"
 weight = 1
+[[menu.main]]
+URL = "tools"
+name = "tools"
+weight = 2
 [outputs]
 home = ["HTML", "AMP", "RSS", "JSON"]
 [params]
-author = "Themefisher"
+author = "Keith Hardisty"
 contact_form_action = "#"
 copyright = "&copy; 2020 [Gethugothemes](https://gethugothemes.com) All Rights Reserved"
-description = "This is meta description"
-google_tag_manager = ""
+description = "A directory of businesses from the Sweetwater neighborhood in the Bee Cave/Austin/Spicewood, Texas area."
+google_tag_manager = "GTM-MSRLBD3"
 home = "Home"
-logo = "images/logo.svg"
+logo = ""
 [params.banner]
 bgImage = "images/banner/banner-bg.svg"
 image = "images/banner/illustration.svg"
