@@ -28,12 +28,11 @@
                       <p>{{ .description }}</p>
                     {{ end }}
                     {{ if .email }}
-                      <a href = "mailto:{{ .email }}">{{ .email }}</a>
+                      <a href = "mailto:{{ .email }}">{{ .email }}</a><br>
                     {{ end }}
                     {{ if .phone }}
-                      <a href="tel:{{ .phone }}">{{ .phone }}</a>
+                      <a href="tel:{{ .phone }}">{{ .phone }}</a><br>
                     {{ end }}
-                    <br>
                     {{ if .link }}
                     <a href="{{ .link | safeURL }}" class="btn btn-primary">Visit Site</a>
                     {{ end }}
