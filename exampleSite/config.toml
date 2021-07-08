@@ -5,6 +5,10 @@ paginate = "5"
 summaryLength = "10"
 theme = "northendlab-hugo"
 title = "Sweetwater Business Directory"
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 2
 [[menu.footer]]
 URL = "contact"
 name = "Contact"
