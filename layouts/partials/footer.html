@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
-        <a href="{{ .Site.BaseURL }}" class="d-block pb-3"><img src="{{ .Site.Params.logo | relURL }}" class="img-fluid" alt="{{ .Site.Title }}"></a>
+        <a href="{{ .Site.BaseURL }}" class="d-block pb-3">>{{ .Site.Title }}</a>
       </div>
       <div class="col-lg-4 text-center mb-4 mb-lg-0">
         <ul class="list-inline mb-0">
@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="text-center mt-4">
-      <span>{{ .Site.Params.copyright | markdownify }}</span>
+      <span>&copy; {{ dateFormat "2006" now }} {{ .Site.Params.copyright | markdownify }}</span>
     </div>
   </div>
 </footer>
