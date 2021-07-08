@@ -1,8 +1,12 @@
 +++
+[menu.footer]
+URL = "tools"
+name = "Companies"
+weight = 1
 [menu.main]
 URL = "tools"
 name = "Companies"
-weight = 2
+weight = 1
 
 +++
 x---
