@@ -1,20 +1,14 @@
 ---
 tools:
-- title: Health/Beauty
+- title: Home Services
   tool:
-  - company: Younique Skin Products
-    name: Donna Kobayashi
-    description: Younique cosmetics & skin care are hypoallergenic, chemical and cruelty-free,
-      mineral-based and long- lasting. And always come with 100% Love It Guarantee.
-    link: http://www.thedivadonna.com/
-    email: YouniqueByDivaDonna@gmail.com
-- title: Fitness
-  tool:
-  - company: Split Fit ATX
-    name: Tec and Heather Nanni
-    description: Personal training, nutritional coaching, online programming
-    link: https://www.facebook.com/splitfitatx/
-    email: Tec@splitfitatx.com
+  - company: Live Love Thanks
+    name: Jenny Brown
+    description: Helping purpose-driven women to permanently eliminate clutter so
+      that they can become 10x more decisive and step more into their purpose and
+      contribution.
+    link: https://livelovethanks.com/
+    email: jenny@livelovethanks.com
 - title: Business Services
   tool:
   - company: BlueStar Case Solutions
@@ -59,6 +53,21 @@ tools:
     link: https://www.stelladot.com/sites/sbudai
     email: jewelsbudai@gmail.com
     phone: 903-880-7706
+- title: Fitness
+  tool:
+  - company: Split Fit ATX
+    name: Tec and Heather Nanni
+    description: Personal training, nutritional coaching, online programming
+    link: https://www.facebook.com/splitfitatx/
+    email: Tec@splitfitatx.com
+- title: Health/Beauty
+  tool:
+  - company: Younique Skin Products
+    name: Donna Kobayashi
+    description: Younique cosmetics & skin care are hypoallergenic, chemical and cruelty-free,
+      mineral-based and long- lasting. And always come with 100% Love It Guarantee.
+    link: http://www.thedivadonna.com/
+    email: YouniqueByDivaDonna@gmail.com
 menu:
   main:
     name: tools yml
