@@ -2,12 +2,13 @@
 tools:
 - title: Business Services
   tool:
-  - company: Business Attorney
+  - company: Practical Business Lawyers
     name: Shiloh A. Coleman
     description: Helping small businesses and startups with their legal matters.
     link: http://www.austinadvocates.com
     email: shiloh@austinadvocates.com
     phone: 512-505-2314
+    image: "/images/practical-business-lawyers.png"
   - company: BlueStar Case Solutions
     name: Jeremy Schaper
     description: Electronic discovery and Cyber Security.
