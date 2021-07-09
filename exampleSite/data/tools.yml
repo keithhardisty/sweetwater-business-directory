@@ -68,6 +68,7 @@ tools:
     link: https://www.stelladot.com/sites/sbudai
     email: jewelsbudai@gmail.com
     phone: 903-880-7706
+    image: "/images/stella-and-dot.png"
 - title: Fitness
   tool:
   - company: Pruvit
@@ -77,15 +78,13 @@ tools:
       womb to tomb.
     link: https://abbycan.experienceketo.com/
     phone: 469-247-1998
+    image: "/images/pruvit.png"
   - company: Split Fit ATX
     name: Tec and Heather Nanni
     description: Personal training, nutritional coaching, online programming splitfitatx.com
     link: https://www.facebook.com/splitfitatx/
     email: Tec@splitfitatx.com
-  - company: Your Yogability
-    name: Phoebe Polakovic
-    description: Private Yoga Instruction with focus on Chronic Health conditions.
-    link: http://www.phoebedyoga.com/
+    image: "/images/split-fit-atx.png"
 - title: Health & Beauty
   tool:
   - company: BeautyCounter
