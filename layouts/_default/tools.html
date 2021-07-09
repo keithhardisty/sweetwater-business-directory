@@ -19,8 +19,12 @@
               {{ range .tool}}
               <div class="col-md-6 mb-4">
                 <div class="card border-0 shadow">
-                  {{ if .image }}<img src="{{ .image | relURL }}" alt="{{ .name | markdownify }}" class="card-img-top">{{ end }}
+                  {{ if .image }}
+                  <img src="{{ .image | relURL }}" alt="{{ .name | markdownify }}" class="card-img-top">
+                  <div class="card-body">
+                  {{ else }}
                   <div class="card-body" style="border-top: 10px solid #084485; border-radius: inherit;">
+                  {{ end }}
                     <h4 class="h5 mb-4"><a class="text-dark" href="{{ .link | safeURL }}">{{ .company | markdownify }}</a></h4>
                     {{ if .name }}
                       <p style="font-style: italic;">{{ .name }}</p>
