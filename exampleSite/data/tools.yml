@@ -14,22 +14,19 @@ tools:
     description: Electronic discovery and Cyber Security.
     link: https://www.bluestarcs.com/
     email: jschaper@bluestarcs.com
-  - company: Danny S. Brown
-    name: Danny S. Brown
-    description: Sales & Marketing Consultant, Executive Coach and Public Speaking
-      Coach
-    link: https://www.dannysbrown.com/
-    email: dannysbrown@gmail.com
+    image: "/images/bluestar.png"
   - company: Executive Coaching
     name: Gregory Short
     description: Career development and coaching for Senior Director to C-Level executives.
     link: https://www.gregoryshort.com/
     email: greg@theshorts.net
+    image: "/images/gregory-short.png"
   - company: THE rAVe Agency
     name: Morgan Lawrence
     description: Public relations, marketing and consulting firm
     link: https://theraveagency.com/
     email: morgan@theraveagency.com
+    image: "/images/rave-agency.png"
 - title: Education
   tool:
   - company: KLA Schools of Sweetwater
