@@ -41,7 +41,7 @@ expire_days = 2
 [params.cta]
 description = "Our goal is to represent all the businesses of people currently living in the Sweetwater community."
 enable = true
-image = "images/hugo-muscot.svg"
+image = "/images/working-from-home-on-sofa.png"
 title = "Want your business listed?"
 [params.cta.button]
 enable = true
