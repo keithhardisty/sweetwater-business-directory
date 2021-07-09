@@ -91,6 +91,7 @@ tools:
     name: Karen Bryant
     description: High performing , safer skin, hair, kids, baby products and make-up.
     link: http://www.beautycounter.com/karenbryant
+    image: "/images/beautycounter.png"
   - company: Hey Nanabread
     name: Jeanne Hunt
     description: Handmade quilted cosmetic bags made from coordinating designer quilting
@@ -104,6 +105,7 @@ tools:
     description: Mentor, Teach and Sell Skincare and Cosmetics
     link: https://www.marykay.com/anitratorns
     phone: 504-296-9279
+    image: "/images/mary-kay.png"
   - company: Massage Health
     name: Christine Merrill
     description: Nationally Certified, Texas Licensed Massage Therapist
@@ -114,11 +116,13 @@ tools:
     link: http://cyant.mynuskin.com
     email: cyantnuskin@gmail.com
     phone: 713-478-8515
+    image: "/images/nuskin.png"
   - company: Rodan+Fields
     name: Winifred Yu
     description: Rodan+Fields provides skincare products for men and women.
     link: https://winifredyu.myrandf.com/
     email: winimom3@gmail.com
+    image: "/images/rodan-and-fields.png"
   - company: Rodan+Fields, Monat, Poppy Event Design
     name: Kristi Gilbert
     description: Skincare and Haircare products.
@@ -129,6 +133,7 @@ tools:
       mineral-based and long-lasting. And always come with 100% Love It Guarantee.
     link: http://www.thedivadonna.com/
     email: YouniqueByDivaDonna@gmail.com
+    image: "/images/younique.png"
 - title: Home Services
   tool:
   - company: Austin Yard Guy
