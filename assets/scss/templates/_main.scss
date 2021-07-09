@@ -16,7 +16,7 @@
 
   .illustration {
     position: absolute;
-    bottom: 0;
+    bottom: -15px;
     right: 30px;
     @include desktop-xl {
       max-width: 600px;
