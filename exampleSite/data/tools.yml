@@ -150,6 +150,7 @@ tools:
     link: https://www.theaustinyardguys.com/
     email: help@theaustinyardguy.com
     phone: 512-435-9780
+    image: "/images/austin-yard-guy.png"
   - company: Capital Remodeling & Design
     name: Brett Denney
     description: Whole Home Remodeling Service
@@ -161,12 +162,7 @@ tools:
       within your home. Special rates for Sweetwater residence and complimentary consultations!
     link: https://www.harmonizedhomebysherry.com/
     phone: 512-893-3400
-  - company: Hill Country Fresh Cleaning
-    name: Emmanuel Aparicio
-    description: Hill Country Fresh Cleaning Service
-    link: http://hillcountryfreshcleaning.com
-    email: Hillcountryfreshcleaning@gmail.com
-    phone: 512-560-6756
+    image: "/images/harmoized-home.png"
   - company: Live Love Thanks
     name: Jenny Brown
     description: Helping purpose-driven women to permanently eliminate clutter so
@@ -174,10 +170,12 @@ tools:
       contribution.
     link: https://livelovethanks.com/
     email: jenny@livelovethanks.com
+    image: "/images/live-love-thanks.png"
   - company: Pampered Chef
     name: Coretta Jenkins
     description: 
     link: http://www.pamperedchef.biz/Corettaj
+    image: "/images/pampered-chef.png"
   - company: Sweetwater Lawn Care
     name: Marc Freeman
     description: Regular lawn maintenance and winterization.
@@ -190,12 +188,14 @@ tools:
     description: Window clings for kids!
     link: https://www.jesplay.com/
     phone: 954-579-4581
+    image: "/images/jesplay.png"
   - company: The Teething Egg
     name: Dean & Jessica Luntz
     description: Teething toys/accessories for babies
     link: https://www.theteethingegg.com/
     email: jluntz@theteethingegg.com
     phone: 954-579-4581
+    image: "/images/teething-egg.png"
 - title: Legal & Finance
   tool:
   - company: American Business
@@ -208,11 +208,7 @@ tools:
     description: Helping families with investment strategies and retirement planning.
     link: http://www.EdwardJones.com/chantell-gonzales
     phone: 512-263-2426
-  - company: EdwardJones Investments
-    name: Tony Stough CRPC
-    description: Financial Planning and Investments
-    link: http://www.EdwardJones.com/tony-stough
-    email: tony.stough@edwardjones.com
+    image: "/images/chantell-gonzalez.png"
   - company: Farmers Insurance
     name: David Wylie
     description: All Lines Personal and Business Insurance, Financial Services (IRAs,
@@ -225,6 +221,7 @@ tools:
     link: http://hillcountrymortgages.com/
     email: Jonathan@hillcountrymortgages.com
     phone: 512-487-4503
+    image: "/images/hill-country-mortgage.png"
   - company: Martin Wealth Management, LLC
     name: Anthony Martin
     description: Wealth Management - Comprehensive Financial Planning, Asset Management,
@@ -233,13 +230,7 @@ tools:
     link: https://www.martinwealthmanagement.net/
     email: anthony.martin@lpl.com
     phone: 512-347-0046
-  - company: MastenLojko LLC
-    name: Ryan Masten
-    description: Money Manager / Alternative Investments / CFTC Regulated Commodity
-      Trading Advisor
-    link: https://mastenlojko.com/
-    email: rmasten@mastenlojko.com
-    phone: 929-314-4605
+    image: "/images/martin-wealth.png"
 - title: Photography
   tool:
   - company: Jill Simonie Photography
@@ -247,17 +238,20 @@ tools:
     description: Family and Newborn Photos
     link: http://jillsimonie.com/
     email: jill@jillsimonie.com
+    image: "/images/jill-simone.png"
   - company: Kat Schaper Photography
     name: Kat Schaper
     description: Special pricing for Sweetwater families.
     link: http://www.KatSchaperPhotography.com
     email: Kat@KatSchaperPhotography.com
+    image: "/images/kat-schaper.png"
   - company: Kristen Beccia Photography
     name: Kristen Beccia Schneider
     description: Family and newborn photographer
     link: https://www.kristenbeccia.com/
     email: Kristen@kristenbeccia.com
     phone: 323-710-7754
+    image: "/images/kristin-beccia.png"
 - title: Real Estate
   tool:
   - company: Century 21
@@ -266,6 +260,7 @@ tools:
       neighbors.
     link: http://www.shannonsellsaustin.com
     phone: 512-897-4349
+    image: "/images/century-21.png"
   - company: Coral Shores Padre / Airbnb vacation rentals
     name: Susan Thomas
     description: Short term vacation rentals on North Padre Island, Corpus Christi
@@ -273,20 +268,24 @@ tools:
     link: https://airbnb.com/h/padre-island-beach-condo-vacation-rental-corpus-christi
     email: suekthomas@me.com
     phone: 310-701-3647
+    image: "/images/coral-shores.png"
   - company: Heart & Sold Austin Group (Keller Williams Realty)
     name: Chadwin Barley
     description: Lakeway / Bee Cave Specialist, Certified Luxury Home Marketing Specialist
     link: https://heartandsoldgroup.com/
     email: chadwin@heartandsoldaustin.com
     phone: 512-589-3251
+    image: "/images/heart-and-sold.png"
   - company: The Seely Group
     name: Dallas and Amy Seely
     description: Real Estate Services
     link: https://seelyproperties.com/
     email: dallas@seelyproperties.com
     phone: 512-777-9530
+    image: "/images/seely-group.png"
   - company: Twelve Rivers Realty
     name: Casey Blancett
     description: Realtor-buying/selling/leasing.
     link: https://www.twelveriversrealty.com/
     phone: 512-650-5057
+    image: "/images/12-rivers-realty.png"
