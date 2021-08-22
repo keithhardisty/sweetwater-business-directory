@@ -2,6 +2,18 @@
 tools:
 - title: Business Services
   tool:
+  - company: BlueStar Case Solutions
+    name: Jeremy Schaper
+    description: Electronic discovery and Cyber Security.
+    link: https://www.bluestarcs.com/
+    email: jschaper@bluestarcs.com
+    image: "/images/bluestar.png"
+  - company: Executive Coaching
+    name: Gregory Short
+    description: Career development and coaching for Senior Director to C-Level executives.
+    link: https://www.gregoryshort.com/
+    email: greg@theshorts.net
+    image: "/images/gregory-short.png"
   - description: Website developer with a specialty in Shopify ecommerce sites.
     image: "/images/shopify-developer.png"
     company: Keith Hardisty
@@ -16,18 +28,6 @@ tools:
     email: shiloh@austinadvocates.com
     phone: 512-505-2314
     image: "/images/practical-business-lawyers.png"
-  - company: BlueStar Case Solutions
-    name: Jeremy Schaper
-    description: Electronic discovery and Cyber Security.
-    link: https://www.bluestarcs.com/
-    email: jschaper@bluestarcs.com
-    image: "/images/bluestar.png"
-  - company: Executive Coaching
-    name: Gregory Short
-    description: Career development and coaching for Senior Director to C-Level executives.
-    link: https://www.gregoryshort.com/
-    email: greg@theshorts.net
-    image: "/images/gregory-short.png"
   - company: THE rAVe Agency
     name: Morgan Lawrence
     description: Public relations, marketing and consulting firm
