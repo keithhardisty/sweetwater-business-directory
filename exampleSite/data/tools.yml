@@ -2,6 +2,13 @@
 tools:
 - title: Business Services
   tool:
+  - description: Website developer with a specialty in Shopify ecommerce sites.
+    image: "/images/shopify-developer.png"
+    company: Keith Hardisty
+    name: Keith Hardisty
+    link: https://www.keithhardisty.com/
+    email: keithhardisty@gmail.com
+    phone: ''
   - company: Practical Business Lawyers
     name: Shiloh A. Coleman
     description: Helping small businesses and startups with their legal matters.
