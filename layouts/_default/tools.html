@@ -29,7 +29,7 @@
                       {{ if .link }}
                       <a class="text-dark" href="{{ .link | safeURL }}">{{ .company | markdownify }}</a>
                       {{ else }}
-                      <p class="text-dark">{{ .company | markdownify }}</p>
+                      <p class="h5 text-dark">{{ .company | markdownify }}</p>
                       {{ end }}
                     </h4>
                     {{ if .name }}
