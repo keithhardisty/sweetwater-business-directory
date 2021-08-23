@@ -25,7 +25,13 @@
                   {{ else }}
                   <div class="card-body" style="border-top: 10px solid #084485; border-radius: inherit;">
                   {{ end }}
-                    <h4 class="h5 mb-4"><a class="text-dark" href="{{ .link | safeURL }}">{{ .company | markdownify }}</a></h4>
+                    <h4 class="h5 mb-4">
+                      {{ if .link }}
+                      <a class="text-dark" href="{{ .link | safeURL }}">{{ .company | markdownify }}</a>
+                      {{ else }}
+                      <p class="text-dark">{{ .company | markdownify }}</p>
+                      {{ end }}
+                    </h4>
                     {{ if .name }}
                       <p style="font-style: italic;">{{ .name }}</p>
                     {{ end }}
