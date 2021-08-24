@@ -158,13 +158,6 @@ tools:
     image: "/images/younique.png"
 - title: Home Services
   tool:
-  - company: D&R Custom Remodeling
-    name: Diego Rodriguez
-    description: Home remodeling services, specializing in kitchens and baths.
-    link: https://www.drcustomremodeling.com
-    email: info@DRCustomRemodeling.com
-    phone: 512-595-9019
-    image: "/images/screen-shot-2021-08-23-at-8-37-47-pm.png"
   - company: Austin Yard Guy
     name: Brett Bauer
     description: Regular lawn maintenance, full landscape maintenance and fertilization/weed
@@ -178,6 +171,13 @@ tools:
     description: Whole Home Remodeling Service
     email: CapitalRemodeling@yahoo.com
     phone: 512-557-3009
+  - company: D&R Custom Remodeling
+    name: Diego Rodriguez
+    description: Home remodeling services, specializing in kitchens and baths.
+    link: https://www.drcustomremodeling.com
+    email: info@DRCustomRemodeling.com
+    phone: 512-595-9019
+    image: "/images/screen-shot-2021-08-23-at-8-37-47-pm.png"
   - company: Harmonized Home by Sherry
     name: Sherry Wilkinson
     description: Professional Organizing Service - We simply bring order and harmony
