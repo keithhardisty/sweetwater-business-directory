@@ -158,6 +158,12 @@ tools:
     image: "/images/younique.png"
 - title: Home Services
   tool:
+  - company: D&R Custom Remodeling
+    name: Diego Rodriguez
+    description: Home remodeling services, specializing in kitchens and baths.
+    link: http://www.DRCustomRemodeling.com
+    email: info@DRCustomRemodeling.com
+    phone: 512-595-9019
   - company: Austin Yard Guy
     name: Brett Bauer
     description: Regular lawn maintenance, full landscape maintenance and fertilization/weed
