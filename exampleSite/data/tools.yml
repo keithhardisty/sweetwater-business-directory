@@ -1,14 +1,5 @@
 ---
 tools:
-- title: Pets
-  tool:
-  - image: "/images/love-of-pets.png"
-    company: For the Love of Pets, LLC
-    name: Jennifer Vickrey
-    description: Pet sitting for Sweetwater neighborhood!
-    link: https://www.facebook.com/fortheloveofpetsTX/
-    email: jdj125@gmail.com
-    phone: 239-292-5825
 - title: Business Services
   tool:
   - company: BlueStar Case Solutions
@@ -62,10 +53,9 @@ tools:
     phone: 949-652-1648
   - company: KLA Schools of Sweetwater
     name: Sanam Madampath
-    description: A Reggio Emilia Preschool for children 8 weeks to PreK, a Summer
-      Camp, and after school care.
+    description: A Reggio Emilia inspired preschool for children 2 months to Kindergarten.
     link: https://www.klaschoolssweetwater.com/
-    email: sanam@klaschools.com
+    email: sweetwater@klaschools.com
     phone: 512-900-3581
     image: "/images/kla-schools.png"
   - company: Math Tutoring
@@ -301,6 +291,15 @@ tools:
     email: anthony.martin@lpl.com
     phone: 512-347-0046
     image: "/images/martin-wealth.png"
+- title: Pets
+  tool:
+  - image: "/images/love-of-pets.png"
+    company: For the Love of Pets, LLC
+    name: Jennifer Vickrey
+    description: Pet sitting for Sweetwater neighborhood!
+    link: https://www.facebook.com/fortheloveofpetsTX/
+    email: jdj125@gmail.com
+    phone: 239-292-5825
 - title: Photography
   tool:
   - company: Jill Simonie Photography
