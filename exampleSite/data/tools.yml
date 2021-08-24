@@ -1,5 +1,14 @@
 ---
 tools:
+- title: Pets
+  tool:
+  - image: "/images/love-of-pets.png"
+    company: For the Love of Pets, LLC
+    name: Jennifer Vickrey
+    description: Pet sitting for Sweetwater neighborhood!
+    link: https://www.facebook.com/fortheloveofpetsTX/
+    email: jdj125@gmail.com
+    phone: 239-292-5825
 - title: Business Services
   tool:
   - company: BlueStar Case Solutions
@@ -109,19 +118,26 @@ tools:
     image: "/images/split-fit-atx.png"
 - title: Food
   tool:
-  - image: "/images/reunion19.png"
-    company: Reunión 19 and R19 Taqueria
-    name: 'Christopher Haydostian '
-    description: 'Texas’ #1 Cali-Mex restaurants. '
-    link: https://reunion19atx.com/
-    email: christopher@r19tqueria.com
-    phone: 702-540-4040
   - image: "/images/screen-shot-2021-08-23-at-8-27-22-pm.png"
     company: Cakes and Cupcakes in Austin
     name: Anoush
     description: Custom cakes and desserts.
     link: https://www.facebook.com/Cakes-and-Cupcakes-in-Austin-2134703346612915/
     email: anoushmilitonyan@yahoo.com
+  - image: "/images/reunion19.png"
+    company: Reunión 19 and R19 Taqueria
+    name: 'Christopher Haydostian '
+    description: 'Texas’ #1 Cali-Mex restaurants. '
+    link: https://reunion19atx.com/
+    email: christopher@r19taqueria.com
+    phone: 702-540-4040
+  - image: "/images/texas-beef-traders.png"
+    company: TEXAS BEEF TRADERS
+    name: Gerry Fluharty
+    description: We bring Texas Hill Country beef to your table.  Feed the Grill.
+    link: https://texasbeeftraders.com/
+    email: contact@texasbeeftraders.com
+    phone: 737-209-0309
 - title: Health & Beauty
   tool:
   - company: BeautyCounter
