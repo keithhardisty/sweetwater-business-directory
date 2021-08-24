@@ -36,6 +36,13 @@ tools:
     image: "/images/rave-agency.png"
 - title: Education
   tool:
+  - image: "/images/screen-shot-2021-08-23-at-8-32-16-pm.png"
+    company: She Shed Painting
+    name: Alisa McGrane
+    description: Painting lessons and paint parties.
+    link: https://www.facebook.com/groups/562124891243972/
+    email: mdm262@yahoo.com
+    phone: 949-652-1648
   - company: KLA Schools of Sweetwater
     name: Sanam Madampath
     description: A Reggio Emilia Preschool for children 8 weeks to PreK, a Summer
