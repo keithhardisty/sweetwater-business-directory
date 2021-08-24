@@ -241,8 +241,9 @@ tools:
     image: "/images/jill-simone.png"
   - company: Kat Schaper Photography
     name: Kat Schaper
-    description: Special pricing for Sweetwater families.
-    link: http://www.KatSchaperPhotography.com
+    description: Full service maternity, newborn, and milestone photography studio.
+      I offer family mini sessions in the fall.
+    link: http://www.katschaperphotography.com/
     email: Kat@KatSchaperPhotography.com
     image: "/images/kat-schaper.png"
   - company: Kristen Beccia Photography
