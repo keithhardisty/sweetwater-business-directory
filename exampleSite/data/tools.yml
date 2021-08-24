@@ -109,6 +109,13 @@ tools:
     image: "/images/split-fit-atx.png"
 - title: Food
   tool:
+  - image: "/images/reunion19.png"
+    company: Reunión 19 and R19 Taqueria
+    name: 'Christopher Haydostian '
+    description: 'Texas’ #1 Cali-Mex restaurants. '
+    link: https://reunion19atx.com/
+    email: christopher@r19tqueria.com
+    phone: 702-540-4040
   - image: "/images/screen-shot-2021-08-23-at-8-27-22-pm.png"
     company: Cakes and Cupcakes in Austin
     name: Anoush
@@ -153,6 +160,14 @@ tools:
     link: https://winifredyu.myrandf.com/
     email: winimom3@gmail.com
     image: "/images/rodan-and-fields.png"
+  - image: "/images/hilary.png"
+    company: Rodan+Fields
+    name: Hilary Coniglione
+    description: '2020’s #1 Premium Skincare Brand! Whatever your skincare goals are,
+      allow me to help you find the right solution tailored to your needs. '
+    link: https://hilary.myrandf.com/
+    email: hilaryconiglione@gmail.com
+    phone: 508-340-3386
   - company: Rodan+Fields, Monat, Poppy Event Design
     name: Kristi Gilbert
     description: Skincare and Haircare products.
