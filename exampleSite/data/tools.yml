@@ -152,12 +152,13 @@ tools:
       more luxurious.
     link: https://www.etsy.com/shop/HeyNanabread
     email: heynanabread@yahoo.com
-  - company: Mary Kay Cosmetics
+  - company: Mary Kay Skin Care and Cosmetics
     name: Anitra Torns
-    description: Mentor, Teach and Sell Skincare and Cosmetics
+    description: Teach and sell skincare and color cosmetics. Gift for any occasion.
     link: https://www.marykay.com/anitratorns
-    phone: 504-296-9279
+    phone: 830-200-0361
     image: "/images/mary-kay.png"
+    email: anitratorns@gmail.com
   - company: Massage Health
     name: Christine Merrill
     description: Nationally Certified, Texas Licensed Massage Therapist
@@ -236,6 +237,13 @@ tools:
     description: 
     link: http://www.pamperedchef.biz/Corettaj
     image: "/images/pampered-chef.png"
+  - image: "/images/paramount-floors.png"
+    company: Paramount Company & Floors
+    name: Mark Lange
+    description: Commercial and Residential flooring company.
+    link: https://paramountcompanyfloors.com/
+    email: mark@paramountcompanyfloors.com
+    phone: 770-212-0922
   - company: Sweetwater Lawn Care
     name: Marc Freeman
     description: Regular lawn maintenance and winterization.
