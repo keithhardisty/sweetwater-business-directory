@@ -258,16 +258,6 @@ tools:
     image: "/images/teething-egg.png"
 - title: Legal & Finance
   tool:
-  - image: "/images/sprout-capital-management.png"
-    company: Sprout Capital Management, LLC
-    name: Kyle Reese
-    description: Sprout Capital Management (SCM) is a financial advisor and active
-      investment manager.  SCM aims to achieve excess investment returns, similar
-      to high-profile hedge funds, while managing downside risk and providing financial
-      planning for clients.
-    link: https://sproutcapitalmanagement.com/
-    email: kyle@sproutcapitalmanagement.com
-    phone: 512-956-7261
   - company: American Business
     name: David Gastwirth
     description: Independent Insurance Specialist—Life, Disability and Long Term Care
@@ -301,6 +291,16 @@ tools:
     email: anthony.martin@lpl.com
     phone: 512-347-0046
     image: "/images/martin-wealth.png"
+  - image: "/images/sprout-capital-management.png"
+    company: Sprout Capital Management, LLC
+    name: Kyle Reese
+    description: Sprout Capital Management (SCM) is a financial advisor and active
+      investment manager.  SCM aims to achieve excess investment returns, similar
+      to high-profile hedge funds, while managing downside risk and providing financial
+      planning for clients.
+    link: https://sproutcapitalmanagement.com/
+    email: kyle@sproutcapitalmanagement.com
+    phone: 512-956-7261
 - title: Pets
   tool:
   - image: "/images/love-of-pets.png"
