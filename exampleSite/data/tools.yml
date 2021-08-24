@@ -124,6 +124,15 @@ tools:
     description: Custom cakes and desserts.
     link: https://www.facebook.com/Cakes-and-Cupcakes-in-Austin-2134703346612915/
     email: anoushmilitonyan@yahoo.com
+  - image: "/images/jams-macaroons.png"
+    company: Jams Macarons
+    name: Melissa Yackevicz
+    description: "Flavorful almond meringue cookies! PM or email me for orders, flavors,
+      and price. \nOrders size: minimum order is 12 macarons per flavors. Mostly for
+      pickup, will charge $1 per mile. Can make other desserts too."
+    link: https://www.facebook.com/JamsMacarons/
+    email: jamsmacarons@gmail.com
+    phone: 210-878-5629
   - image: "/images/reunion19.png"
     company: Reunión 19 and R19 Taqueria
     name: 'Christopher Haydostian '
