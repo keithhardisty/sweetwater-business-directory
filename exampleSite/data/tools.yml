@@ -1,13 +1,5 @@
 ---
 tools:
-- title: Food
-  tool:
-  - image: "/images/screen-shot-2021-08-23-at-8-27-22-pm.png"
-    company: Cakes and Cupcakes in Austin
-    name: Anoush
-    description: Custom cakes and desserts.
-    link: https://www.facebook.com/Cakes-and-Cupcakes-in-Austin-2134703346612915/
-    email: anoushmilitonyan@yahoo.com
 - title: Business Services
   tool:
   - company: BlueStar Case Solutions
@@ -100,6 +92,14 @@ tools:
     link: https://www.facebook.com/splitfitatx/
     email: Tec@splitfitatx.com
     image: "/images/split-fit-atx.png"
+- title: Food
+  tool:
+  - image: "/images/screen-shot-2021-08-23-at-8-27-22-pm.png"
+    company: Cakes and Cupcakes in Austin
+    name: Anoush
+    description: Custom cakes and desserts.
+    link: https://www.facebook.com/Cakes-and-Cupcakes-in-Austin-2134703346612915/
+    email: anoushmilitonyan@yahoo.com
 - title: Health & Beauty
   tool:
   - company: BeautyCounter
