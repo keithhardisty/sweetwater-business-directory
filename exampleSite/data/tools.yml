@@ -8,12 +8,6 @@ tools:
     link: https://www.bluestarcs.com/
     email: jschaper@bluestarcs.com
     image: "/images/bluestar.png"
-  - company: Executive Coaching
-    name: Gregory Short
-    description: Career development and coaching for Senior Director to C-Level executives.
-    link: https://www.gregoryshort.com/
-    email: greg@theshorts.net
-    image: "/images/gregory-short.png"
   - description: Website developer with a specialty in Shopify ecommerce sites.
     image: "/images/shopify-developer.png"
     company: Keith Hardisty
@@ -283,13 +277,6 @@ tools:
       529 Plans, SEP, Annuities, etc.)
     email: dwylie@farmersagent.com
     phone: 512-987-7719
-  - company: Hill Country Mortgages
-    name: Jonathan Sarver
-    description: Independent Mortgage Broker
-    link: http://hillcountrymortgages.com/
-    email: Jonathan@hillcountrymortgages.com
-    phone: 512-487-4503
-    image: "/images/hill-country-mortgage.png"
   - company: Martin Wealth Management, LLC
     name: Anthony Martin
     description: Wealth Management - Comprehensive Financial Planning, Asset Management,
@@ -364,13 +351,6 @@ tools:
     email: chadwin@heartandsoldaustin.com
     phone: 512-589-3251
     image: "/images/heart-and-sold.png"
-  - company: The Seely Group
-    name: Dallas and Amy Seely
-    description: Real Estate Services
-    link: https://seelyproperties.com/
-    email: dallas@seelyproperties.com
-    phone: 512-777-9530
-    image: "/images/seely-group.png"
   - company: Twelve Rivers Realty
     name: Casey Blancett
     description: Realtor-buying/selling/leasing.
