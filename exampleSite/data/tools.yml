@@ -260,6 +260,14 @@ tools:
     image: "/images/teething-egg.png"
 - title: Legal & Finance
   tool:
+  - image: "/images/rembrandt.png"
+    company: Rembrandt Financial Group, LLC
+    name: Shawn Bryan
+    description: Holistic Financial services, including Retirement Planning, Wealth
+      Management, Asset Protection and College Funding
+    link: https://www.rembrandtfinancialgroup.com/
+    email: sbryan@rembrandtfinancialgroup.com
+    phone: 512-306-1314
   - company: American Business
     name: David Gastwirth
     description: Independent Insurance Specialist—Life, Disability and Long Term Care
