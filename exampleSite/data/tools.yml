@@ -331,11 +331,13 @@ tools:
   tool:
   - company: Century 21
     name: Shannon and Tyler Mangin
-    description: Realty Services and free market analysis every 6 months for Sweetwater
-      neighbors.
-    link: http://www.shannonsellsaustin.com
+    description: We are a full-time husband and wife real estate team who LOVE and
+      LIVE in Sweetwater. Long-time residents with years of experience in neighborhood
+      sales. Follow us on social at instagram.com/manginteam
+    link: www.themanginteam.com
     phone: 512-897-4349
     image: "/images/century-21.png"
+    email: shannon@themanginteam.com
   - company: Coral Shores Padre / Airbnb vacation rentals
     name: Susan Thomas
     description: Short term vacation rentals on North Padre Island, Corpus Christi
