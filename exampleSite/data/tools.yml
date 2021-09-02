@@ -84,8 +84,18 @@ tools:
     email: jewelsbudai@gmail.com
     phone: 903-880-7706
     image: "/images/stella-and-dot.png"
-- title: Fitness
+- title: Fitness & Medical
   tool:
+  - image: "/images/corrective-muscle-solutions.png"
+    company: Corrective Muscle Solutions
+    name: Lauren Frost
+    description: Kinesiologist Scott Frost has spent well over a decade developing
+      a system for evaluating, analyzing and approaching muscle health. The result
+      is a unique data-driven approach that is helping people all over Austin solve
+      their biggest muscle and movement challenges.
+    link: https://www.correctivemusclesolutions.com/
+    email: lauren@correctivemusclesolutions.com
+    phone: 512-788-7691
   - company: Pruvit
     name: Abby Canter
     description: Pure Therapeutic Exogenous Ketones for improved energy, focus, clarity,
