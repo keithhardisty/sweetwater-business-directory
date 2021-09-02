@@ -96,10 +96,17 @@ tools:
     image: "/images/pruvit.png"
   - company: Split Fit ATX
     name: Tec and Heather Nanni
-    description: Personal training, nutritional coaching, online programming splitfitatx.com
+    description: We are a husband and wife certified personal training team who have
+      over two decades of combined experience as fitness professionals. We offer in
+      home personal training and personal training out of our climate controlled in-home
+      gym utilizing a plethora of top of line brand new, strength equipment. We help
+      people feel strong, gain confidence and become the best versions of themselves
+      from this inside out! We also offer nutritional services such as macro coaching,
+      meal prepping and custom diet plans.
     link: https://www.facebook.com/splitfitatx/
-    email: Tec@splitfitatx.com
+    email: heather@splitfitatx.com
     image: "/images/split-fit-atx.png"
+    phone: 630-309-3212
 - title: Food
   tool:
   - image: "/images/screen-shot-2021-08-23-at-8-27-22-pm.png"
@@ -337,6 +344,13 @@ tools:
     image: "/images/kristin-beccia.png"
 - title: Real Estate
   tool:
+  - image: "/images/atx-property-group.png"
+    company: ATX Property Group
+    name: Britney Cross
+    description: Residential and farm/ranch reality
+    link: https://atxpg.com/
+    email: bcross@atxpg.com
+    phone: 361-935-7398
   - company: Century 21
     name: Shannon and Tyler Mangin
     description: We are a full-time husband and wife real estate team who LOVE and
@@ -346,6 +360,15 @@ tools:
     phone: 512-897-4349
     image: "/images/century-21.png"
     email: shannon@themanginteam.com
+  - image: "/images/compass-gwen-young.png"
+    company: Compass Real Estate
+    name: Gwen Young
+    description: My mission is to provide an outstanding level of service, excellence
+      and expertise in the real estate market to my clients, whether selling, buying,
+      renting or investing.
+    link: http://gwenyoungatx.com/
+    email: gwen.young@compass.com
+    phone: 512-900-0845
   - company: Coral Shores Padre / Airbnb vacation rentals
     name: Susan Thomas
     description: Short term vacation rentals on North Padre Island, Corpus Christi
