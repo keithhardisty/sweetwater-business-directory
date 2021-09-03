@@ -119,6 +119,13 @@ tools:
     phone: 630-309-3212
 - title: Food
   tool:
+  - image: "/images/simply-fabulous-bakery.png"
+    company: Simply Fabulous Bakery
+    name: Michelle Carruth
+    description: Bakery
+    link: https://www.simplyfabulousbakery.net/
+    email: michelle@simplyfabulousbakery.net
+    phone: 512-808-9756
   - image: "/images/screen-shot-2021-08-23-at-8-27-22-pm.png"
     company: Cakes and Cupcakes in Austin
     name: Anoush
@@ -134,6 +141,13 @@ tools:
     link: https://www.facebook.com/JamsMacarons/
     email: jamsmacarons@gmail.com
     phone: 210-878-5629
+  - image: "/images/nuthouse-bakery.png"
+    company: Nuthouse Bakery
+    name: Laura Kuhr
+    description: Home bakery specializing in cookies.
+    link: https://nuthousebakery.com/
+    email: thenuthousebakery@gmail.com
+    phone: 925-315-1297
   - image: "/images/reunion19.png"
     company: Reunión 19 and R19 Taqueria
     name: 'Christopher Haydostian '
@@ -208,6 +222,18 @@ tools:
     image: "/images/younique.png"
 - title: Home Services
   tool:
+  - image: "/images/austin-living-landscapes.png"
+    company: 'Austin Living Landscapes '
+    name: Jack Williams
+    description: Austin Living Landscapes provides design-build architectural services
+      for garden and landscape projects throughout the Austin market. It is our goal
+      to create sacred spaces and beautiful landscapes from design conception through
+      construction completion. With the client, our process is a collaborative effort
+      to produce well planned, meaningful spaces tailored to transform your garden
+      or landscape.
+    link: https://www.austinlivinglandscapes.com/
+    email: austinlivinglandscapes@gmail.com
+    phone: 512-921-4400
   - company: Austin Yard Guy
     name: Brett Bauer
     description: Regular lawn maintenance, full landscape maintenance and fertilization/weed
