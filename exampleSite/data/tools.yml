@@ -119,13 +119,6 @@ tools:
     phone: 630-309-3212
 - title: Food
   tool:
-  - image: "/images/simply-fabulous-bakery.png"
-    company: Simply Fabulous Bakery
-    name: Michelle Carruth
-    description: Bakery
-    link: https://www.simplyfabulousbakery.net/
-    email: michelle@simplyfabulousbakery.net
-    phone: 512-808-9756
   - image: "/images/screen-shot-2021-08-23-at-8-27-22-pm.png"
     company: Cakes and Cupcakes in Austin
     name: Anoush
@@ -155,6 +148,13 @@ tools:
     link: https://reunion19atx.com/
     email: christopher@r19taqueria.com
     phone: 702-540-4040
+  - image: "/images/simply-fabulous-bakery.png"
+    company: Simply Fabulous Bakery
+    name: Michelle Carruth
+    description: Bakery
+    link: https://www.simplyfabulousbakery.net/
+    email: michelle@simplyfabulousbakery.net
+    phone: 512-808-9756
   - image: "/images/texas-beef-traders.png"
     company: TEXAS BEEF TRADERS
     name: Gerry Fluharty
