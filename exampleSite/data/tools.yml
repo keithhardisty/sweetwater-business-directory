@@ -469,6 +469,13 @@ tools:
     email: Kristen@kristenbeccia.com
     phone: 323-710-7754
     image: "/images/kristin-beccia.png"
+  - image: "/images/shannon-worley-photography.png"
+    company: Shannon Worley Photography
+    name: Shannon Worley
+    description: Family Photographer
+    link: http://www.shannonworleyphotography.com/
+    email: info@shannonworleyphotography.com
+    phone: 480-236-1529
 - title: Real Estate
   tool:
   - image: "/images/atx-property-group.png"
