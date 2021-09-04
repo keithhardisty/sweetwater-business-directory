@@ -345,6 +345,14 @@ tools:
     link: https://livelovethanks.com/
     email: jenny@livelovethanks.com
     image: "/images/live-love-thanks.png"
+  - description: We are two mommas who are passionate about helping busy families
+      in Austin experience more organized spaces and less clutter.
+    company: Momma Method Personal Organizing
+    email: bmactaggart@mommamethod.com
+    name: Brooke MacTaggart
+    link: https://www.mommamethod.com/
+    phone: 512-797-4884
+    image: "/images/momma-method.png"
   - company: Neat Cleaning + Organization
     name: Amanda Blancett
     description: 'Professional cleaning and organizing services that is affordable
