@@ -22,6 +22,13 @@ tools:
     email: shiloh@austinadvocates.com
     phone: 512-505-2314
     image: "/images/practical-business-lawyers.png"
+  - image: "/images/rgd.png"
+    company: Ross Golf Design, LLC
+    name: Brian Ross
+    description: Golf Course Design, Shaping, and Construction Management Services
+    link: https://www.rossgolfarchitects.com/
+    email: brian@rossgolfarchitects.com
+    phone: 512-492-2928
   - image: "/images/screen-shot-2021-08-23-at-8-41-20-pm.png"
     company: The Art of eXecution
     name: Raquel Rodriguez
@@ -420,6 +427,18 @@ tools:
     email: chadwin@heartandsoldaustin.com
     phone: 512-589-3251
     image: "/images/heart-and-sold.png"
+  - image: "/images/jbgoodwin.png"
+    company: 'JBGoodwin, REALTORS® | Gilligan Group '
+    name: Jennifer & Kevin Gilligan
+    description: Jennifer and Kevin are a married, full-time real estate team and
+      your modern Austin REALTORS® fueled by cold brew and The Office. Their passion
+      is serving their family, friends, and their Sweetwater community by teaching
+      how to make smart real estate decisions. Follow them on social media for Austin
+      Local Business Spotlights, Housing Market Updates, Decor Inspiration, and Real
+      Estate Insider Tips!  @GilliganGroupATX
+    link: https://www.gilligangrouprealestate.com/
+    email: gilligangroup@jbgoodwin.com
+    phone: 512-763-7074
   - image: "/images/kellwe-williams.png"
     company: Keller Williams Realty
     name: Jason Podzemny
