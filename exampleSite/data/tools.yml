@@ -1,52 +1,5 @@
 ---
 tools:
-- title: Misc
-  tool:
-  - image: "/images/balloons-magic-llc.png"
-    company: Balloons Magic LLC
-    name: Sarah Pallipaga
-    description: Customized Balloon Decorations for all events, Especially Corporate
-    link: https://balloonsmagic.com/
-    email: sarah@balloonsmagic.com
-    phone: 512-800-8989
-  - image: "/images/big-party-events.png"
-    company: Big Party Events
-    name: Serena Fazio
-    description: We offer balloon decoration services, set up and free delivery. Garlands,
-      bouquets, backdrops and more! Check our instagram ro Facebook @bigpartyevents.atx
-    link: http://www.bigpartyeventsatx.com/
-    email: info@bigpartyeventsatx.com
-    phone: 512-412-1906
-  - image: "/images/bluebonnet-picnic-company.png"
-    company: Bluebonnet Picnic Company
-    name: Hilary Coniglione
-    description: 'Located in Austin’s hill country, Bluebonnet Picnic Company provides
-      a local luxury pop-up picnic experience in Austin, Lakeway, Bee Cave, Westlake,
-      Dripping Springs, Spicewood, and beyond. A luxury picnic is the perfect way
-      to celebrate a birthday, anniversary, bridal shower, bachelorette party, date
-      night, baby shower, girls day out, and more. '
-    link: https://bluebonnetpicnic.com/
-    email: bluebonnetpicnic@gmail.com
-    phone: 508-340-3356
-  - image: "/images/walker-trolleys.png"
-    company: Walker Trolleys
-    name: Brad Payne
-    description: 'Walker Trolleys was founded to build equipment to help golfers walk
-      the game.  Our trolley is the first of its kind, one based on design: minimalistic
-      and intuitive.  At our core, we are lovers of all things walking golf and have
-      put our heart and soul into our trolley.  We hope you, our customers, enjoy
-      our trolley half as much as we enjoy building it for you.'
-    link: https://walkertrolleys.com/
-    email: info@walkertrolleys.com
-    phone: 888-556-9255
-  - image: "/images/xtreme-auto-detail.png"
-    company: Xtreme Auto Detail
-    name: Daniel Bus
-    description: Providing Austin, Texas with luxury auto detailing, window tint,
-      paint correction, ceramic coating along with vehicle and boat wraps!
-    link: https://www.xadetail.com/
-    email: daniel@xadetail.com
-    phone: 512-487-4873
 - title: Business Services
   tool:
   - company: BlueStar Case Solutions
@@ -216,6 +169,53 @@ tools:
     link: https://texasbeeftraders.com/
     email: contact@texasbeeftraders.com
     phone: 737-209-0309
+- title: Misc
+  tool:
+  - image: "/images/balloons-magic-llc.png"
+    company: Balloons Magic LLC
+    name: Sarah Pallipaga
+    description: Customized Balloon Decorations for all events, Especially Corporate
+    link: https://balloonsmagic.com/
+    email: sarah@balloonsmagic.com
+    phone: 512-800-8989
+  - image: "/images/big-party-events.png"
+    company: Big Party Events
+    name: Serena Fazio
+    description: We offer balloon decoration services, set up and free delivery. Garlands,
+      bouquets, backdrops and more! Check our instagram ro Facebook @bigpartyevents.atx
+    link: http://www.bigpartyeventsatx.com/
+    email: info@bigpartyeventsatx.com
+    phone: 512-412-1906
+  - image: "/images/bluebonnet-picnic-company.png"
+    company: Bluebonnet Picnic Company
+    name: Hilary Coniglione
+    description: 'Located in Austin’s hill country, Bluebonnet Picnic Company provides
+      a local luxury pop-up picnic experience in Austin, Lakeway, Bee Cave, Westlake,
+      Dripping Springs, Spicewood, and beyond. A luxury picnic is the perfect way
+      to celebrate a birthday, anniversary, bridal shower, bachelorette party, date
+      night, baby shower, girls day out, and more. '
+    link: https://bluebonnetpicnic.com/
+    email: bluebonnetpicnic@gmail.com
+    phone: 508-340-3356
+  - image: "/images/walker-trolleys.png"
+    company: Walker Trolleys
+    name: Brad Payne
+    description: 'Walker Trolleys was founded to build equipment to help golfers walk
+      the game.  Our trolley is the first of its kind, one based on design: minimalistic
+      and intuitive.  At our core, we are lovers of all things walking golf and have
+      put our heart and soul into our trolley.  We hope you, our customers, enjoy
+      our trolley half as much as we enjoy building it for you.'
+    link: https://walkertrolleys.com/
+    email: info@walkertrolleys.com
+    phone: 888-556-9255
+  - image: "/images/xtreme-auto-detail.png"
+    company: Xtreme Auto Detail
+    name: Daniel Bus
+    description: Providing Austin, Texas with luxury auto detailing, window tint,
+      paint correction, ceramic coating along with vehicle and boat wraps!
+    link: https://www.xadetail.com/
+    email: daniel@xadetail.com
+    phone: 512-487-4873
 - title: Health & Beauty
   tool:
   - image: "/images/bc.png"
