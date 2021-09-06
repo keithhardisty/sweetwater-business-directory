@@ -22,6 +22,15 @@ tools:
     email: shiloh@austinadvocates.com
     phone: 512-505-2314
     image: "/images/practical-business-lawyers.png"
+  - image: "/images/riverside-staffing.png"
+    company: Riverside Staffing
+    name: Ryen Peck
+    description: 'We help software companies across the country with their staffing
+      needs. We can help your business with staffing or if you are on the market for
+      a new role I’d love to connect! '
+    link: https://riversidestaffing.io/
+    email: ryen@riversidestaffing.io
+    phone: 650-380-6796
   - image: "/images/rgd.png"
     company: Ross Golf Design, LLC
     name: Brian Ross
@@ -360,6 +369,13 @@ tools:
     link: ''
     email: neatco.atx@gmail.com
     phone: 402-547-3967
+  - image: "/images/optic-fence.png"
+    company: Optic Fence
+    name: Brian Ellis
+    description: Fence and gate contractor
+    link: https://opticfence.com/
+    email: brian@opticresidential.com
+    phone: 512-987-3929
   - company: Pampered Chef
     name: Coretta Jenkins
     description: 
