@@ -15,6 +15,13 @@ tools:
     link: https://www.keithhardisty.com/
     email: keithhardisty@gmail.com
     phone: ''
+  - image: "/images/mbs.png"
+    company: Merchant Broker Services
+    name: Natalie Kloss-Biagini
+    description: I help businesses setup payment platforms.
+    link: https://www.merchantbrokerservices.com/
+    email: Natalie@MerchantBrokerServices.com
+    phone: 512-957-9277
   - company: Practical Business Lawyers
     name: Shiloh A. Coleman
     description: Helping small businesses and startups with their legal matters.
@@ -206,6 +213,14 @@ tools:
     link: https://bluebonnetpicnic.com/
     email: bluebonnetpicnic@gmail.com
     phone: 508-340-3356
+  - image: "/images/travel-abundance.png"
+    company: Travel Abundance
+    name: Natalie Kloss-Biagini
+    description: 'My team and I design custom curated trips all over the world. Follow
+      TA on FB & Insta '
+    link: https://www.travelabundance.com/
+    email: natalieb@travelabundance.com
+    phone: 512-957-9277
   - image: "/images/walker-trolleys.png"
     company: Walker Trolleys
     name: Brad Payne
