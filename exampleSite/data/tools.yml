@@ -187,6 +187,13 @@ tools:
     phone: 737-209-0309
 - title: Misc
   tool:
+  - image: "/images/big-electric-bikes.png"
+    company: Big Electric Bikes
+    name: Jason Corder
+    description: Electric Bikes distribution
+    link: https://bigselectricbikes.com/
+    email: Jason.Corder@outlook.com
+    phone: 949-690-7649
   - image: "/images/balloons-magic-llc.png"
     company: Balloons Magic LLC
     name: Sarah Pallipaga
