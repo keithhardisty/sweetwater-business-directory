@@ -53,12 +53,6 @@ tools:
     link: https://www.theartofexecution.com
     email: raquel.rodriguez@theartofexecution.com
     phone: 917-697-0923
-  - company: THE rAVe Agency
-    name: Morgan Lawrence
-    description: Public relations, marketing and consulting firm
-    link: https://theraveagency.com/
-    email: morgan@theraveagency.com
-    image: "/images/rave-agency.png"
 - title: Education
   tool:
   - image: "/images/screen-shot-2021-08-23-at-8-32-16-pm.png"
