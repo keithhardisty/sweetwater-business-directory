@@ -568,6 +568,13 @@ tools:
     link: https://www.gilligangrouprealestate.com/
     email: gilligangroup@jbgoodwin.com
     phone: 512-763-7074
+  - image: "/images/lauren-frost.png"
+    company: Keller Williams Realty Lake Travis
+    name: Lauren Frost
+    description: Real Estate Services
+    link: http://www.frosthomesatx.com
+    email: laurenfrost@kw.com
+    phone: 973-769-1340
   - image: "/images/kellwe-williams.png"
     company: Keller Williams Realty
     name: Jason Podzemny
