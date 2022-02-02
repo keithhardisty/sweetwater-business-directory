@@ -342,6 +342,14 @@ tools:
     description: Whole Home Remodeling Service
     email: CapitalRemodeling@yahoo.com
     phone: 512-557-3009
+  - image: "/images/2022-02-02_06-19-43.png"
+    company: Claudia Pakes Design Studio
+    name: Claudia Pakes
+    description: 'Residential interiors, kitchen and bath remodeling, window treatments
+      and custom upholstery. '
+    link: https://claudiapakes.com/
+    email: claudia@claudiapakes.com
+    phone: 805-705-8911
   - company: Custom furniture and woodworking projects
     name: Colin Bauer and Cassie Jellison
     description: We build custom Adirondack chairs, patio furniture, corn hole sets,
