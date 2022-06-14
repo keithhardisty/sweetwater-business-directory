@@ -35,7 +35,7 @@ tools:
     name: Darren Anderson
     description: Payments and Marketing company, we help businesses take payments
       and set up retail and online presence
-    link: www.quantumelectronicpayments.com
+    link: https://www.quantumelectronicpayments.com
     email: darren@quantumepay.com
     phone: 949-500-8384
   - image: "/images/riverside-staffing.png"
