@@ -532,20 +532,6 @@ tools:
     phone: 480-236-1529
 - title: Real Estate
   tool:
-  - image: "/images/mariam-sulaiman.png"
-    company: Mariam Sulaiman Group
-    description: |
-      Real estate is as powerful as it is emotional. Where you live becomes the core of your universe and a place where memories are made. Even an investment property can have an exceptional impact on your life as it can become an essential part of your portfolio.
-
-      Whether you’re buying, selling, or investing, I am determined to make your experience as frictionless and empowering as possible. As a skilled advocate working on your behalf, I am committed to providing you with the highest level of integrity and resourcefulness in all real estate matters.
-
-      Reach out to me if you are looking for a savvy REALTOR® who is focused on utilizing the latest marketing tools, negotiating deals, and most importantly building an authentic partnership with clients to achieve our real estate goals.
-
-      Let’s make your real estate dreams come true!
-    link: https://mariamsulaiman.exprealty.com/
-    email: mariam.sulaiman@exprealty.com
-    phone: 619-746-3914
-    name: Mariam Sulaiman
   - image: "/images/atx-property-group.png"
     company: ATX Property Group
     name: Britney Cross
@@ -612,6 +598,20 @@ tools:
     link: https://jason.austinbuysellhomes.com/
     email: jasonpodz@kw.com
     phone: 512-663-1783
+  - image: "/images/mariam-sulaiman.png"
+    company: Mariam Sulaiman Group
+    description: |
+      Real estate is as powerful as it is emotional. Where you live becomes the core of your universe and a place where memories are made. Even an investment property can have an exceptional impact on your life as it can become an essential part of your portfolio.
+
+      Whether you’re buying, selling, or investing, I am determined to make your experience as frictionless and empowering as possible. As a skilled advocate working on your behalf, I am committed to providing you with the highest level of integrity and resourcefulness in all real estate matters.
+
+      Reach out to me if you are looking for a savvy REALTOR® who is focused on utilizing the latest marketing tools, negotiating deals, and most importantly building an authentic partnership with clients to achieve our real estate goals.
+
+      Let’s make your real estate dreams come true!
+    link: https://mariamsulaiman.exprealty.com/
+    email: mariam.sulaiman@exprealty.com
+    phone: 619-746-3914
+    name: Mariam Sulaiman
   - company: Twelve Rivers Realty
     name: Casey Blancett
     description: Realtor-buying/selling/leasing.
