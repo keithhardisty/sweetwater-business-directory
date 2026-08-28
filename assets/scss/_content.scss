@@ -1,0 +1,161 @@
+// ---------------------------------------------------------------------------
+// Article / news pages
+// ---------------------------------------------------------------------------
+
+.post-list {
+  display: grid;
+  gap: var(--sp-5);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.post-card {
+  padding: var(--sp-5);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+
+  h2 { margin-bottom: var(--sp-2); font-size: 1.35rem; }
+  h2 a { color: var(--text); text-decoration: none; }
+  h2 a:hover { color: var(--brand); }
+}
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2) var(--sp-3);
+  margin-bottom: var(--sp-3);
+  color: var(--text-faint);
+  font-size: .85rem;
+
+  a { color: var(--text-muted); }
+}
+
+.post-header {
+  margin-bottom: var(--sp-6);
+  padding-bottom: var(--sp-5);
+  border-bottom: 1px solid var(--border);
+}
+
+.post-hero {
+  width: 100%;
+  margin-bottom: var(--sp-6);
+  border-radius: var(--radius-lg);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin: var(--sp-6) 0 0;
+  padding: 0;
+  list-style: none;
+
+  a {
+    display: inline-block;
+    padding: .25rem .7rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    color: var(--text-muted);
+    font-size: .82rem;
+    text-decoration: none;
+  }
+
+  a:hover { border-color: var(--brand); color: var(--brand); }
+}
+
+// ---------------------------------------------------------------------------
+// Get-listed page
+// ---------------------------------------------------------------------------
+
+.listing-layout {
+  display: grid;
+  gap: var(--sp-7);
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  align-items: start;
+
+  @media (max-width: 900px) { grid-template-columns: 1fr; }
+}
+
+.steps {
+  counter-reset: step;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.steps li {
+  position: relative;
+  padding-left: 2.6rem;
+  counter-increment: step;
+
+  & + li { margin-top: var(--sp-4); }
+
+  &::before {
+    content: counter(step);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: var(--radius-pill);
+    background: var(--brand-soft);
+    color: var(--brand-ink);
+    font-size: .85rem;
+    font-weight: 700;
+  }
+}
+
+.steps strong { display: block; color: var(--text); }
+.steps span { color: var(--text-muted); font-size: .93rem; }
+
+// ---------------------------------------------------------------------------
+// 404
+// ---------------------------------------------------------------------------
+
+.error-page {
+  padding-block: var(--sp-9);
+  text-align: center;
+
+  .error-page__code {
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 12vw, 8rem);
+    line-height: 1;
+    color: var(--brand);
+    margin-bottom: var(--sp-3);
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: var(--sp-2);
+  margin-top: var(--sp-6);
+  padding: 0;
+  list-style: none;
+
+  a, span {
+    display: grid;
+    place-items: center;
+    min-width: 38px;
+    height: 38px;
+    padding-inline: .6rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    color: var(--text-muted);
+    text-decoration: none;
+  }
+
+  a:hover { border-color: var(--brand); color: var(--brand); }
+
+  .is-active span {
+    background: var(--brand);
+    border-color: var(--brand);
+    color: var(--on-brand);
+    font-weight: 600;
+  }
+}

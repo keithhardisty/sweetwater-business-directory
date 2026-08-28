@@ -1,44 +1,94 @@
 {{ define "main" }}
+<section class="container section">
+  <div class="listing-layout">
+    <div>
+      <p class="eyebrow">Free for Sweetwater residents</p>
+      <h1>{{ .Title }}</h1>
+      <div class="prose lede">{{ .Content }}</div>
 
-<section class="section">
-  <div class="container">
-    <div class="row justify-content-between">
-      <div class="col-lg-5">
-        <h2 class="mb-4">{{ .Title | markdownify }}</h2>
-        <div class="content">{{ .Content }}</div>
-        <form name="contact" class="row" netlify>
-          <div class="col-md-6">
-            <input type="text" class="form-control mb-4" placeholder="Your name" name="name" id="name" required>
-          </div>
-          <div class="col-md-6">
-            <input type="company" class="form-control mb-4" placeholder="Company" name="company" id="company" >
-          </div>
-          <div class="col-md-6">
-            <input type="email" class="form-control mb-4" placeholder="Email" name="email" id="email" required >
-          </div>
-          <div class="col-md-6">
-            <input type="tel" class="form-control mb-4" placeholder="Phone" name="phone" id="phone">
-          </div>
-          <div class="col-12">
-            <input type="text" class="form-control mb-4" placeholder="Website" name="website" id="website">
-          </div>
-          <div class="col-12">
-            <textarea name="message" id="message" class="form-control mb-4" placeholder="Description of business/service"
-              rows="5"></textarea>
-          </div>
-          <div class="col-12">
-            <input type="text" class="form-control mb-4" placeholder="Sweetwater neighborhood/subdivision" name="neighborhood" id="neighborhood" required>
-          </div>
-          <div class="col-12">
-            <button class="btn btn-primary btn-block" type="submit">Send</button>
-          </div>
-        </form>
-      </div>
-      <div class="col-lg-6 text-md-right">
-        <img class="img-fluid" src="{{ .Params.Image | relURL }}" alt="">
-      </div>
+      {{- /* Netlify picks this form up at build time from the static HTML.
+             `form-name` and the honeypot are both required for that to work. */ -}}
+      <form name="listing" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+            action="/thanks/" class="panel" style="margin-top: var(--sp-6);">
+        <input type="hidden" name="form-name" value="listing">
+        <p class="visually-hidden">
+          <label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+        </p>
+
+        <div class="field-row">
+          <label class="field">
+            <span class="field__label">Your name <span aria-hidden="true">*</span></span>
+            <input class="input" type="text" name="name" required autocomplete="name">
+          </label>
+          <label class="field">
+            <span class="field__label">Business name <span aria-hidden="true">*</span></span>
+            <input class="input" type="text" name="company" required autocomplete="organization">
+          </label>
+        </div>
+
+        <div class="field-row">
+          <label class="field">
+            <span class="field__label">Email <span aria-hidden="true">*</span></span>
+            <input class="input" type="email" name="email" required autocomplete="email">
+          </label>
+          <label class="field">
+            <span class="field__label">Phone</span>
+            <input class="input" type="tel" name="phone" autocomplete="tel">
+          </label>
+        </div>
+
+        <div class="field-row">
+          <label class="field">
+            <span class="field__label">Website</span>
+            <input class="input" type="url" name="website" placeholder="https://" autocomplete="url">
+          </label>
+          <label class="field">
+            <span class="field__label">Category</span>
+            <select class="select" name="category">
+              <option value="">Choose the closest fit&hellip;</option>
+              {{ range sort site.Data.tools.tools "title" }}
+              <option value="{{ .title }}">{{ .title }}</option>
+              {{ end }}
+              <option value="Not sure">Not sure &mdash; you pick</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="field">
+          <span class="field__label">Which part of Sweetwater are you in? <span aria-hidden="true">*</span></span>
+          <input class="input" type="text" name="neighborhood" required placeholder="Section or street">
+        </label>
+
+        <label class="field">
+          <span class="field__label">What do you do? <span aria-hidden="true">*</span></span>
+          <textarea class="textarea" name="message" required
+                    placeholder="A sentence or two is plenty &mdash; this is what neighbors will read on your card."></textarea>
+          <span class="field__hint">Keep it under about 200 characters so it fits neatly in the directory.</span>
+        </label>
+
+        <button class="btn btn--primary btn--block" type="submit">Send my listing</button>
+      </form>
     </div>
+
+    <aside>
+      <div class="panel">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><strong>Send your details</strong><span>Fill in the form. Only the starred fields are required.</span></li>
+          <li><strong>We check the neighborhood</strong><span>Listings are for people who live in {{ site.Params.neighborhood }}.</span></li>
+          <li><strong>You go live</strong><span>Your card appears in the directory, usually within a few days.</span></li>
+        </ol>
+      </div>
+
+      <div class="panel" style="margin-top: var(--sp-5);">
+        <h2>Already listed?</h2>
+        <p style="color: var(--text-muted);">
+          Use the same form to send a correction &mdash; a new phone number, a fresh website, or a
+          description that no longer fits. Mention what changed and we will update it.
+        </p>
+        <a class="btn btn--outline btn--sm" href="{{ "/" | relURL }}">Browse the directory {{ partial "icon.html" "arrow-right" }}</a>
+      </div>
+    </aside>
   </div>
 </section>
-
 {{ end }}

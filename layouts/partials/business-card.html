@@ -1,0 +1,87 @@
+{{- /* One directory listing.
+       Context: dict "biz" <entry from data/tools.yml> "category" <category title> */ -}}
+{{- $b := .biz -}}
+{{- $category := .category -}}
+{{- $company := $b.company | default $b.name | default "Untitled listing" -}}
+{{- $desc := $b.description | plainify | chomp -}}
+
+{{- /* Everything a visitor might reasonably type, folded into one haystack. */ -}}
+{{- $haystack := slice $company $b.name $desc $category -}}
+{{- with $b.tags }}{{ range . }}{{ $haystack = $haystack | append . }}{{ end }}{{ end -}}
+{{- with $b.phone }}{{ $haystack = $haystack | append . }}{{ end -}}
+{{- with $b.email }}{{ $haystack = $haystack | append . }}{{ end -}}
+{{- with $b.link }}{{ $haystack = $haystack | append (replaceRE `^https?://(www\.)?` "" .) }}{{ end -}}
+
+<li class="biz-card" data-business data-category="{{ $category }}"
+    data-name="{{ $company }}"
+    data-search="{{ delimit (where $haystack "!=" nil) " " }}">
+
+  {{ if $b.image }}
+  <div class="biz-card__media">
+    {{- /* Fixed 16:9 window, anchored to the top of the source image so the
+           full-page screenshots several listings use still show their logo. */ -}}
+    <img src="{{ $b.image | relURL }}" alt="{{ $company }}" loading="lazy" decoding="async" width="480" height="270">
+    <span class="biz-card__tag">{{ $category }}</span>
+  </div>
+  {{ else }}
+  {{- /* No image: a stable, name-derived monogram instead of an empty box. */ -}}
+  {{- $palette := slice
+      "linear-gradient(135deg,#0f5c92,#2d87c4)"
+      "linear-gradient(135deg,#c25f3e,#e08a5f)"
+      "linear-gradient(135deg,#2f6f5e,#5aa78d)"
+      "linear-gradient(135deg,#5a4b8c,#8f7ec4)"
+      "linear-gradient(135deg,#a1522f,#cf8a4e)"
+      "linear-gradient(135deg,#38566e,#6f90a8)" -}}
+  {{- /* Stable per-name color: first hex digit of the MD5, folded into the palette. */ -}}
+  {{- $hexmap := dict "0" 0 "1" 1 "2" 2 "3" 3 "4" 4 "5" 5 "6" 6 "7" 7 "8" 8 "9" 9 "a" 10 "b" 11 "c" 12 "d" 13 "e" 14 "f" 15 -}}
+  {{- $seed := mod (index $hexmap (substr (md5 $company) 0 1)) (len $palette) -}}
+  {{- $words := split (trim $company " ") " " -}}
+  {{- $initials := "" -}}
+  {{- range first 2 $words }}{{ with . }}{{ $initials = printf "%s%s" $initials (substr . 0 1) }}{{ end }}{{ end -}}
+  <div class="biz-card__media biz-card__media--fallback" style="background-image: {{ index $palette $seed | safeCSS }};">
+    <span class="biz-card__monogram" aria-hidden="true">{{ upper $initials }}</span>
+    <span class="biz-card__tag">{{ $category }}</span>
+  </div>
+  {{ end }}
+
+  <div class="biz-card__body">
+    <h3 class="biz-card__title">
+      {{ with $b.link }}
+      <a href="{{ . | safeURL }}" rel="noopener nofollow" target="_blank">{{ $company }}</a>
+      {{ else }}
+      {{ $company }}
+      {{ end }}
+    </h3>
+
+    {{ with $b.name }}{{ if ne . $company }}<p class="biz-card__owner">{{ . }}</p>{{ end }}{{ end }}
+    {{ with $desc }}<p class="biz-card__desc">{{ . }}</p>{{ end }}
+
+    <div class="biz-card__actions">
+      {{ with $b.link }}
+      <a class="action action--primary" href="{{ . | safeURL }}" rel="noopener nofollow" target="_blank">
+        {{ partial "icon.html" "external" }}<span>Website</span>
+      </a>
+      {{ end }}
+      {{ with $b.email }}
+      <a class="action" href="mailto:{{ . }}">
+        {{ partial "icon.html" "mail" }}<span>Email</span>
+      </a>
+      {{ end }}
+      {{ with $b.phone }}
+      <a class="action" href="tel:{{ replaceRE `[^0-9+]` "" . }}">
+        {{ partial "icon.html" "phone" }}<span>{{ . }}</span>
+      </a>
+      {{ end }}
+      {{ with $b.instagram }}
+      <a class="action" href="{{ . | safeURL }}" rel="noopener nofollow" target="_blank" aria-label="{{ $company }} on Instagram">
+        {{ partial "icon.html" "instagram" }}
+      </a>
+      {{ end }}
+      {{ with $b.facebook }}
+      <a class="action" href="{{ . | safeURL }}" rel="noopener nofollow" target="_blank" aria-label="{{ $company }} on Facebook">
+        {{ partial "icon.html" "facebook" }}
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</li>

@@ -1,12 +1,18 @@
-name = "Northendlab Hugo"
+name = "Sweetwater Business Directory"
 license = "MIT"
-licenselink = "https://github.com/themefisher/northendlab-hugo/blob/master/LICENSE"
-description = "Blog Template"
-homepage = "https://gethugothemes.com/products/northendlab/"
-tags = ['landing-page', 'fast', 'light', 'white', 'modern', 'themefisher', 'hugo-theme', 'hugo-templates', 'bootstrap', 'blog', 'responsive', 'clean', 'simple', 'creative', 'contact-form', 'custom-themes', 'mobile', 'minimalistic', 'pages', 'resume', 'portfolio', 'google analytics', 'customizable', 'flexbox', 'presentation', 'product', 'gethugothemes', 'typography']
-features = ['bootstrap','responsive']
-min_version = "0.58.0"
+licenselink = "https://github.com/keithhardisty/sweetwater-business-directory/blob/master/LICENSE"
+description = "A neighborhood business directory for the Sweetwater community near Bee Cave, Texas."
+homepage = "https://sweetwater-business-directory.netlify.app/"
+tags = ["directory", "local business", "neighborhood"]
+features = ["search", "filtering", "dark mode", "structured data"]
+min_version = "0.128.0"
 
 [author]
-  name = "Themefisher"
-  homepage = "https://themefisher.com/"
+  name = "Keith Hardisty"
+  homepage = "https://keithhardisty.com"
+
+# Derived from the Northendlab Hugo theme by Themefisher (MIT).
+[original]
+  name = "Northendlab"
+  homepage = "https://github.com/themefisher/northendlab-hugo"
+  repo = "https://github.com/themefisher/northendlab-hugo"

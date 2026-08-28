@@ -1,95 +1,113 @@
-# Easy Setup (Hugo + Netlify + Forestry)
-Build your website with northendlab hugo theme by following this easy steps (No Coding Required)
+# Sweetwater Business Directory
 
-<a href="http://bit.ly/meghna-hugo-installation" target="_blank" title="meghna hugo installation" rel="nofollow"><img width="100%" src="https://user-images.githubusercontent.com/37659754/70844354-4028be00-1e6a-11ea-8d84-02e9a25e7db8.png"></a>
+A free directory of businesses owned by people who live in the Sweetwater
+community near Bee Cave, Austin and Spicewood, Texas.
 
-In this tutorial we will show you to make your website live without buying any hosting and touching a single line of code. We made this tutorial based on [meghna hugo](https://github.com/themefisher/meghna-hugo) but you can setup everithing like this.
+**Live site:** https://sweetwater-business-directory.netlify.app/
 
-### What you need !!
+Built with [Hugo](https://gohugo.io). No JavaScript frameworks, no CSS
+framework, no icon fonts — the whole front end is one small stylesheet and two
+short scripts.
 
-1. Git acccount (Ex: Github, Gitlab etc ) . In our case we use github.
-2. [Netlify](https://bit.ly/netlify-account) account to host files and add custom domain .
-3. [Forestry](https://bit.ly/forestry-account) account to maintain whole project without code.
+---
 
-
-### Step 1 : Fork or Clone repository
-
-First we will fork this [northendlab hugo](https://github.com/themefisher/northendlab-hugo) template.
-
-### Step 2 : Add your repository in Forestry
-
-Go to your [forestry](https://bit.ly/forestry-account)  account and click on `import your site now`. declare your config.toml file [`exampleSite`] and fill up basic settings .
-
-**Or just click this button for one click installation** [![import to forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=themefisher/northendlab-hugo&engine=hugo&version=0.60.1&config=exampleSite)
-
-Now mark everything as done, then go to configuration to change the base url . You can put any url but this have to similar as netlify . So for now put a name which you are going to put in netlify as netlify subdomain.
-
-### Step 3 : Setup and host website with Netlify
-
-Here comes the last step . Go to your [netlify](https://bit.ly/netlify-account) account and click add new site . Choose your git repository to import your website in netlify .  And now you can see the forked `northendlab hugo` theme. select it and follow the steps. Then go to `site settings` for change the site name and put your subdoamin name here what you puted on forestry as base url. save it and go to `deploy` from top menu, Wait a while and click on `site preview` or just simply go to the subdomain you puted as base url. **BOOM! Your site is live.** Now you can go to forestry and add, remove or customize every setting and content.
-
-> If you face any issue regarding the installation feel free to onen [open a new issue](https://github.com/themefisher/northendlab-hugo/issues)
-
-## Table of Contents
-
-- [Demo](#demo)
-- [Installation](#installation)
-- [Main Features](#main-features)
-- [Reporting Issues](#reporting-issues)
-- [Technical Support or Questions](#technical-support-or-questions-(paid))
-- [More Hugo Themes](https://gethugothemes.com/shop/)
-
-## Demo
-
-| Author  | Contact  | Search  | Tools  |
-|---|---|---|---|
-| ![author](https://user-images.githubusercontent.com/37659754/69005991-8cf4a400-0953-11ea-8dd7-b9a7819803a4.png) | ![contact](https://user-images.githubusercontent.com/37659754/69005990-8bc37700-0953-11ea-8189-3e8cb62b45bd.png) | ![search](https://user-images.githubusercontent.com/37659754/69005992-8cf4a400-0953-11ea-8349-e4f55ae123a5.png) | ![tools](https://user-images.githubusercontent.com/37659754/69005993-8d8d3a80-0953-11ea-965a-d30c3f71dfa2.png) |
-
-**The images are only for demonstration purpose, Please don't use those images.**
-
-[Live Demo](http://demo.themefisher.com/northendlab-hugo/).
-
-
-## Installation
-At the top we have shown an easy hugo installation. but still if you think you want to go with the traditional way then use the following commands:
-
-**Note : You must use `hugo-extended` version to compile SCSS**
+## How the repository is laid out
 
 ```
-$ git clone git@github.com:gethugothemes/northendlab-hugo.git
-$ cd northendlab-hugo/exampleSite/
-$ hugo server --themesDir ../..
+assets/
+  scss/            Design system (tokens, base, components, directory, content)
+  js/              site.js (nav, theme) and directory.js (search + filters)
+layouts/
+  index.html       The directory itself — this is the home page
+  partials/        head (SEO/JSON-LD), header, footer, business-card, icon
+  _default/        contact, single, list, baseof
+exampleSite/
+  config.toml      Site settings, menus, hero and CTA copy
+  content/         Home, get-listed, news posts
+  data/tools.yml   >>> Every business listing lives here <<<
+  static/images/   Business logos and screenshots
 ```
-Or Check out [Full Documentation](https://docs.gethugothemes.com/northendlab/?ref=github).
 
-## Main features
+The site content lives in `exampleSite/` while the templates and assets live at
+the repository root. Hugo stitches them together with the `[module.mounts]`
+block in `exampleSite/config.toml`, so the build no longer depends on what the
+checkout directory happens to be called.
 
-- Bootstrap 4 Powered
-- Google Analytics
-- SEO Friendly
-- Multiple Author
-- Contact Page
-- Search Item
-- Responsive Ready
+## Running it locally
 
-## Reporting Issues
+Requires **Hugo extended** 0.128 or newer (the extended build is needed to
+compile SCSS).
 
-We use GitHub Issues as the official bug tracker for the Navigator Template. Please Search [existing issues](https://github.com/themefisher/northendlab-hugo/issues). It’s possible someone has already reported the same problem.
-If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/northendlab-hugo/issues)
+```bash
+cd exampleSite
+hugo server
+```
 
-## Technical Support or Questions (Paid)
+Then open http://localhost:1313.
 
-If you have questions or need help integrating the product please [contact us](mailto:mehedi@themefisher.com) instead of opening an issue.  
+To produce the files Netlify would deploy:
 
-## Hire Us
-We are available for Hiring of your next HUGO project. Drop Us a mail [mehedi@themefisher.com](mailto:mehedi@themefisher.com)
+```bash
+cd exampleSite && hugo --gc --minify
+```
 
-## Premium Themes
+## Adding or editing a business
 
-| [![Mega-Bundle-HUGO](https://gethugothemes.com/wp-content/uploads/edd/2019/09/Mega-Bundle-HUGO.png)](https://themefisher.com/products/hugo-mega-bundle/) | [![reader](https://gethugothemes.com/wp-content/uploads/edd/2020/09/Reader.jpg)](https://gethugothemes.com/products/reader/) | [![logbook](https://gethugothemes.com/wp-content/uploads/edd/2020/03/logbook-hugo.jpg](https://gethugothemes.com/products/logbook-hugo/) |
-|:---:|:---:|:---:|
-| **Hugo Mega Bundle**  | **Revolve**  | **Liva**  |
-| [![northendlab](https://gethugothemes.com/wp-content/uploads/edd/2020/05/northendlab-hugo-theme.png)](https://gethugothemes.com/products/northendlab/) | [![Influencer](https://gethugothemes.com/wp-content/uploads/2019/11/Influencer.png)](https://gethugothemes.com/products/influencer-hugo/) | [![Kross](https://gethugothemes.com/wp-content/uploads/edd/2019/07/kross-portfolio-template.jpg)](https://gethugothemes.com/products/kross-hugo-theme/) |
-| **Northendlab** | **Influencer** | **Kross** |
-| [![Biztrox](https://gethugothemes.com/wp-content/uploads/2019/12/Biztrox.png)](https://gethugothemes.com/products/hugo-business-theme/) | [![Parsa](https://gethugothemes.com/wp-content/uploads/edd/2019/07/parsa-768x576.jpg)](https://gethugothemes.com/products/parsa-hugo-theme/) | [![all](https://gethugothemes.com/wp-content/uploads/2019/12/get-more-hugo-themes.png)](https://gethugothemes.com/shop/) |
-| **Biztrox** | **Parsa** | **More Hugo Themes** |
+Every listing is an entry in `exampleSite/data/tools.yml`, grouped by category:
+
+```yaml
+- title: Home Services
+  tool:
+  - company: Example Landscaping        # required — the business name
+    name: Jane Doe                      # the neighbor to contact
+    description: Lawn care and design.  # one or two sentences
+    link: https://example.com           # full URL including https://
+    email: jane@example.com
+    phone: 512-555-0100
+    image: "/images/example.png"        # optional
+    instagram: https://instagram.com/…  # optional
+    facebook: https://facebook.com/…    # optional
+    tags: ["mowing", "irrigation"]      # optional extra search keywords
+    featured: true                      # optional — pins to top of its category
+```
+
+Only `company` is strictly required. Everything else renders only when present:
+a listing with no image gets a colored monogram, one with no phone simply has
+no call button.
+
+To add a **new category**, add another `- title:` block. Categories are sorted
+alphabetically on the page, except `Misc`, which is always pushed to the end.
+
+### About the images
+
+Card images are displayed in a fixed 16:9 window cropped from the **top** of the
+source image, so every card in a row lines up. If you are screenshotting a
+business's website, make sure the logo is near the top of the shot.
+
+## What the directory page does
+
+- Instant text search across business name, contact name, description,
+  category, tags, phone and domain — accent- and punctuation-insensitive,
+  and every word has to match somewhere (order doesn't matter)
+- Category filtering, with counts
+- Group-by-category or a flat A–Z listing
+- Search, category and sort are mirrored into the URL (`?q=`, `?category=`,
+  `?sort=`), so a filtered view can be shared or bookmarked
+- `/` focuses the search box; `Esc` clears it
+- Light and dark themes, following the operating system unless overridden
+- Works with JavaScript disabled — all 80 listings are in the HTML, only the
+  filter controls need scripting, so they are hidden when it is unavailable
+- A print stylesheet, for anyone who wants the list on the fridge
+
+## Deployment
+
+Netlify builds from `netlify.toml` and publishes `exampleSite/public`. The
+"get listed" form is a [Netlify Form](https://docs.netlify.com/forms/setup/)
+named `listing`; submissions appear in the Netlify dashboard and it redirects
+to `/thanks/`.
+
+## Credits
+
+Originally started from the
+[Northendlab](https://github.com/themefisher/northendlab-hugo) Hugo theme by
+Themefisher (MIT). Little of it remains beyond the initial project structure.

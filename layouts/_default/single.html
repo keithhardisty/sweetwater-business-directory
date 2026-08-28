@@ -1,47 +1,26 @@
 {{ define "main" }}
-
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto block shadow mb-5">
-        <h2>{{ .Title | markdownify }}</h2>
-        <div class="mb-3 post-meta">
-          <a href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize | lower }}">{{ .Params.Author | title }}</a>,
-          {{ .PublishDate.Format "Jan 2, 2006" }}, {{ range .Params.Categories }}
-          <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}">{{ . | title }}</a>
-          {{ end }}
-        </div>
-        {{ if .Params.Image }}
-        <img src="{{ .Params.Image | relURL }}" class="img-fluid w-100 mb-4" alt="{{ .Title | markdownify }}">
-        {{ end }}
-        <div class="content mb-5">
-          {{ .Content }}
-        </div>
-        <div class="mb-3 post-meta">
-          {{range .Params.Tags }} <a href="{{ `tags/` | relLangURL}}{{ . | urlize | lower }}">#{{ . | title }}</a>,  {{ end }}
-        </div>
-      </div>
-      <!-- Comment out related posts
-      <div class="col-lg-8 mx-auto block shadow">
-        {{ $related := .Site.RegularPages.Related . | first 5 }}
-        {{ with $related }}
-        <h3>See Also</h3>
-        <ul>
-          {{ range . }}
-          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-          {{ end }}
-        </ul>
-        {{ end }}
-      </div>
-      -->
-      {{ if .Site.DisqusShortname}}
-      <div class="col-lg-8 mx-auto block shadow">
-        <!-- comments -->
-        {{ template "_internal/disqus.html" . }}
-      </div>
-      {{ end }}
+<article class="container container--narrow section">
+  <div class="post-header">
+    <h1>{{ .Title }}</h1>
+    <div class="post-meta">
+      {{ with .Params.author }}<span>{{ . }}</span>{{ end }}
+      {{ if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>{{ end }}
+      {{ range .Params.categories }}<span>{{ . }}</span>{{ end }}
     </div>
   </div>
-</section>
 
+  {{ with .Params.image }}<img class="post-hero" src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy" decoding="async">{{ end }}
+
+  <div class="prose">{{ .Content }}</div>
+
+  {{ with .Params.tags }}
+  <ul class="tag-list">
+    {{ range . }}<li><span>#{{ . }}</span></li>{{ end }}
+  </ul>
+  {{ end }}
+
+  <p style="margin-top: var(--sp-7);">
+    <a class="btn btn--outline" href="{{ "/" | relURL }}">Back to the directory</a>
+  </p>
+</article>
 {{ end }}

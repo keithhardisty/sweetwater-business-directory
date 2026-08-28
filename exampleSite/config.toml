@@ -1,74 +1,109 @@
-baseURL = "sweetwater-business-directory.netlify.app"
-disqusShortname = ""
+baseURL = "https://sweetwater-business-directory.netlify.app/"
 languageCode = "en-us"
-paginate = "5"
-summaryLength = "10"
-theme = "northendlab-hugo"
 title = "Sweetwater Business Directory"
-[[menu.footer]]
-name = "Local Businesses"
-url = "/tools"
-weight = 1
-[[menu.footer]]
-URL = "contact"
-name = "Contact"
-weight = 2
-[[menu.main]]
-name = "Local Businesses"
-url = "/tools"
-weight = 1
-[[menu.main]]
-URL = "contact"
-name = "Contact"
-weight = 2
+summaryLength = 20
+enableRobotsTXT = true
+
+# A single news post does not warrant taxonomy listing pages.
+disableKinds = ["taxonomy", "term"]
+
+# Blog posts only; the directory itself is not paginated.
+[pagination]
+  pagerSize = 8
+
+# The site lives in exampleSite/ while layouts and assets live at the repo root.
+# Mounting them explicitly avoids depending on what the checkout directory is
+# named, which is what the old `theme = "..."` + HUGO_THEME dance was working
+# around.
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "data"
+    target = "data"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "../layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "../assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "../static"
+    target = "static"
+  [[module.mounts]]
+    source = "../archetypes"
+    target = "archetypes"
+
 [outputs]
-home = ["HTML", "AMP", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[[menu.main]]
+  name = "Directory"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "Get Listed"
+  url = "/contact/"
+  weight = 2
+[[menu.main]]
+  name = "News"
+  url = "/news/"
+  weight = 3
+
+[[menu.footer]]
+  name = "Directory"
+  url = "/"
+  weight = 1
+[[menu.footer]]
+  name = "Get Listed"
+  url = "/contact/"
+  weight = 2
+[[menu.footer]]
+  name = "News"
+  url = "/news/"
+  weight = 3
+
 [params]
-author = "Keith Hardisty"
-contact_form_action = "#"
-copyright = "[Keith Hardisty](https://keithhardisty.com) All Rights Reserved"
-description = "A directory of businesses from the Sweetwater neighborhood in the Bee Cave/Austin/Spicewood, Texas area."
-google_tag_manager = "GTM-MSRLBD3"
-home = "Home"
-logo = ""
-[params.banner]
-bgImage = "images/banner/banner-bg.svg"
-image = "/images/work-from-home.png"
-title = "Support your neighbors, friends, and local businesses"
-[params.cookies]
-enable = false
-expire_days = 2
+  author = "Keith Hardisty"
+  description = "A free directory of businesses owned by neighbors in the Sweetwater community near Bee Cave, Austin and Spicewood, Texas."
+  keywords = "Sweetwater, Bee Cave, Austin, Spicewood, Texas, local business, neighborhood directory, small business"
+  neighborhood = "Sweetwater"
+  region = "Bee Cave, Texas"
+  copyright = "[Keith Hardisty](https://keithhardisty.com)"
+  google_tag_manager = "GTM-MSRLBD3"
+  # Used for Open Graph / Twitter card previews.
+  ogImage = "images/og-default.png"
+
+[params.hero]
+  eyebrow = "Bee Cave · Austin · Spicewood, Texas"
+  title = "Your neighbors are in business."
+  subtitle = "Every listing below belongs to someone who lives in Sweetwater. Search it, share it, and spend a little closer to home."
+
 [params.cta]
-description = "Our goal is to represent all the businesses of people currently living in the Sweetwater community."
-enable = true
-image = "/images/working-from-home-on-sofa.png"
-title = "Want your business listed?"
-[params.cta.button]
-enable = true
-label = "Get listed"
-link = "/contact"
-[[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
-[[params.plugins.css]]
-link = "plugins/themify-icons/themify-icons.css"
-[[params.plugins.js]]
-link = "plugins/jQuery/jquery.min.js"
-[[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
-[[params.plugins.js]]
-link = "plugins/search/fuse.min.js"
-[[params.plugins.js]]
-link = "plugins/search/mark.js"
-[[params.plugins.js]]
-link = "plugins/search/search.js"
-[params.preloader]
-enable = true
-preloader = ""
-[params.search]
-enable = true
+  enable = true
+  title = "Run a business? Get on the list."
+  description = "Listings are free for anyone living in Sweetwater. Send over your details and we will add you to the directory."
+  [params.cta.button]
+    enable = true
+    label = "Add your business"
+    link = "/contact/"
+
+# Netlify Forms handles submissions; no third-party endpoint required.
+[params.contact]
+  netlify = true
+
 [[params.social]]
-icon = "ti-instagram"
-link = "https://www.instagram.com/sweetwaterlivingatx/"
+  name = "Instagram"
+  icon = "instagram"
+  link = "https://www.instagram.com/sweetwaterlivingatx/"
 [[params.social]]
-icon = "ti-facebook"
-link = "https://www.facebook.com/sweetwaterliving/"
+  name = "Facebook"
+  icon = "facebook"
+  link = "https://www.facebook.com/sweetwaterliving/"

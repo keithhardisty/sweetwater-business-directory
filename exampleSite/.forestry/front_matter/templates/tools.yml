@@ -1,24 +1,27 @@
 ---
-label: Tools
+label: Businesses
 hide_body: true
 fields:
 - type: field_group_list
   name: tools
-  label: tools
+  label: Categories
   fields:
   - type: text
     name: title
-    label: title
+    label: Category name
   - type: field_group_list
     name: tool
-    label: tool
+    label: Businesses
     fields:
     - type: file
       name: image
       label: image
+      description: Logo or a screenshot of the business site. Shown cropped to a wide
+        banner, so keep the important part near the top.
     - type: text
       name: company
       label: company
+      description: Business name. Required.
     - name: name
       type: text
       config:
@@ -37,6 +40,7 @@ fields:
     - type: text
       name: link
       label: link
+      description: 'Full website URL, including https://'
     - name: email
       type: text
       config:
@@ -48,3 +52,25 @@ fields:
         required: false
       label: phone
       description: 'Format: 123-456-7890'
+    - name: instagram
+      type: text
+      config:
+        required: false
+      label: instagram
+      description: Optional. Full Instagram profile URL.
+    - name: facebook
+      type: text
+      config:
+        required: false
+      label: facebook
+      description: Optional. Full Facebook page URL.
+    - name: tags
+      type: list
+      config:
+        required: false
+      label: tags
+      description: Optional extra keywords people might search for.
+    - name: featured
+      type: boolean
+      label: featured
+      description: Optional. Pins this business to the top of its category.

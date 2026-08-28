@@ -1,0 +1,75 @@
+{{- /* Structured data. The directory page emits an ItemList of LocalBusiness
+       entries so search engines can read the listings, not just the prose. */ -}}
+{{- $org := dict
+  "@type" "Organization"
+  "@id" (printf "%s#organization" site.BaseURL)
+  "name" site.Title
+  "url" site.BaseURL
+  "description" site.Params.description
+  "areaServed" (dict "@type" "Place" "name" "Sweetwater, Bee Cave, Texas")
+-}}
+{{- with site.Params.social -}}
+  {{- $sameAs := slice -}}
+  {{- range . }}{{ $sameAs = $sameAs | append .link }}{{ end -}}
+  {{- $org = merge $org (dict "sameAs" $sameAs) -}}
+{{- end -}}
+
+{{- if .IsHome -}}
+  {{- $items := slice -}}
+  {{- $position := 0 -}}
+  {{- range site.Data.tools.tools -}}
+    {{- $category := .title -}}
+    {{- range .tool -}}
+      {{- if .company -}}
+        {{- $position = add $position 1 -}}
+        {{- $biz := dict "@type" "LocalBusiness" "name" .company -}}
+        {{- with .description }}{{ $biz = merge $biz (dict "description" (. | plainify | chomp)) }}{{ end -}}
+        {{- with .link }}{{ $biz = merge $biz (dict "url" .) }}{{ end -}}
+        {{- with .email }}{{ $biz = merge $biz (dict "email" .) }}{{ end -}}
+        {{- with .phone }}{{ $biz = merge $biz (dict "telephone" .) }}{{ end -}}
+        {{- with .image }}{{ $biz = merge $biz (dict "image" (. | absURL)) }}{{ end -}}
+        {{- $biz = merge $biz (dict
+            "areaServed" "Bee Cave, Texas"
+            "additionalType" $category
+            "address" (dict "@type" "PostalAddress" "addressLocality" "Bee Cave" "addressRegion" "TX" "addressCountry" "US")) -}}
+        {{- $items = $items | append (dict "@type" "ListItem" "position" $position "item" $biz) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $graph := slice
+    $org
+    (dict "@type" "WebSite" "@id" (printf "%s#website" site.BaseURL) "url" site.BaseURL "name" site.Title
+      "description" site.Params.description "publisher" (dict "@id" (printf "%s#organization" site.BaseURL)))
+    (dict "@type" "ItemList" "name" "Sweetwater neighborhood businesses"
+      "numberOfItems" $position "itemListOrder" "https://schema.org/ItemListOrderAscending" "itemListElement" $items)
+  -}}
+  <script type="application/ld+json">{{ (dict "@context" "https://schema.org" "@graph" $graph) | jsonify | safeJS }}</script>
+{{- else if eq .Type "post" -}}
+  {{- $post := dict
+    "@context" "https://schema.org"
+    "@type" "BlogPosting"
+    "headline" .Title
+    "url" .Permalink
+    "mainEntityOfPage" .Permalink
+    "publisher" $org
+  -}}
+  {{- with .Description }}{{ $post = merge $post (dict "description" .) }}{{ end -}}
+  {{- if not .Date.IsZero }}{{ $post = merge $post (dict "datePublished" (.Date.Format "2006-01-02")) }}{{ end -}}
+  {{- if not .Lastmod.IsZero }}{{ $post = merge $post (dict "dateModified" (.Lastmod.Format "2006-01-02")) }}{{ end -}}
+  {{- with .Params.author }}{{ $post = merge $post (dict "author" (dict "@type" "Person" "name" .)) }}{{ end -}}
+  {{- with .Params.image }}{{ $post = merge $post (dict "image" (. | absURL)) }}{{ end -}}
+  <script type="application/ld+json">{{ $post | jsonify | safeJS }}</script>
+{{- else -}}
+  {{- /* Everything else is an ordinary page; the get-listed page is a ContactPage. */ -}}
+  {{- $type := cond (eq .Layout "contact") "ContactPage" "WebPage" -}}
+  {{- $page := dict
+    "@context" "https://schema.org"
+    "@type" $type
+    "name" .Title
+    "url" .Permalink
+    "isPartOf" (dict "@id" (printf "%s#website" site.BaseURL))
+    "publisher" $org
+  -}}
+  {{- with .Description }}{{ $page = merge $page (dict "description" .) }}{{ end -}}
+  <script type="application/ld+json">{{ $page | jsonify | safeJS }}</script>
+{{- end -}}

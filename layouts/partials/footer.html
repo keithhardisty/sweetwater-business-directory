@@ -1,88 +1,57 @@
-<!-- footer -->
-<footer class="py-4 bg-light border-top">
+<footer class="site-footer">
   <div class="container">
-    <div class="row justify-content-between align-items-center">
-      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
-        <a href="{{ .Site.BaseURL }}" class="d-block pb-3">{{ .Site.Title }}</a>
+    <div class="site-footer__grid">
+      <div>
+        <a class="brand" href="{{ "/" | relURL }}">
+          <span class="brand__mark" aria-hidden="true">SW</span>
+          <span class="brand__text"><span>{{ site.Title }}</span></span>
+        </a>
+        <p style="margin-top: var(--sp-3); color: var(--text-muted); max-width: 34ch;">
+          {{ site.Params.description }}
+        </p>
       </div>
-      <div class="col-lg-4 text-center mb-4 mb-lg-0">
-        <ul class="list-inline mb-0">
-          {{ range .Site.Menus.footer }}
-          <li class="list-inline-item"><a class="text-dark d-block p-2" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+
+      <div>
+        <h2>Browse</h2>
+        <ul class="footer-list">
+          {{ range site.Menus.footer }}
+          <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
       </div>
-      <div class="col-lg-4 text-lg-right text-center mb-4 mb-lg-0">
-        <ul class="list-inline social-icon mb-0">
-          {{ range .Site.Params.social }}
-          <li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+
+      <div>
+        <h2>Categories</h2>
+        <ul class="footer-list">
+          {{ range first 6 (sort site.Data.tools.tools "title") }}
+          <li><a href="{{ (printf "/?category=%s" (.title | urlquery)) | relURL }}">{{ .title }}</a></li>
+          {{ end }}
+          <li><a href="{{ "/" | relURL }}">See all &rarr;</a></li>
+        </ul>
+      </div>
+
+      {{ with site.Params.social }}
+      <div>
+        <h2>Follow along</h2>
+        <ul class="social-list">
+          {{ range . }}
+          <li>
+            <a href="{{ .link | safeURL }}" rel="me noopener" target="_blank">
+              <span class="visually-hidden">{{ .name | default "Social" }}</span>
+              {{ partial "icon.html" .icon }}
+            </a>
+          </li>
           {{ end }}
         </ul>
       </div>
+      {{ end }}
     </div>
-    <div class="text-center mt-4">
-      <span>&copy; {{ dateFormat "2006" now }} {{ .Site.Params.copyright | markdownify }}</span>
+
+    <div class="site-footer__legal">
+      <p>
+        &copy; {{ now.Format "2006" }} {{ site.Params.copyright | markdownify }}.
+        Built by and for the {{ site.Params.neighborhood }} community &mdash; listings are free.
+      </p>
     </div>
   </div>
 </footer>
-<!-- /footer -->
-
-<!-- search index -->
-{{ if .Site.Params.search.enable }}
-<script>
-  var indexURL = {{ "index.json" | absURL }}
-</script>
-{{ end }}
-
-{{ "<!-- JS Plugins -->" | safeHTML }}
-{{ range .Site.Params.plugins.js}}
-<script src="{{ .link | absURL }}"></script>
-{{ end }}
-
-{{ "<!-- Main Script -->" | safeHTML }}
-{{ $script := resources.Get "js/script.js" | minify}}
-<script src="{{ $script.Permalink }}"></script>
-
-
-<!-- cookie -->
-{{ if site.Params.cookies.enable }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-<div id="js-cookie-box" class="cookie-box cookie-box-hide">
-	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2">I Accept</span>
-</div>
-<script>
-	(function ($) {
-		const cookieBox = document.getElementById('js-cookie-box');
-		const cookieButton = document.getElementById('js-cookie-button');
-		if (!Cookies.get('cookie-box')) {
-			cookieBox.classList.remove('cookie-box-hide');
-			cookieButton.onclick = function () {
-				Cookies.set('cookie-box', true, {
-					expires: {{ site.Params.cookies.expire_days }}
-				});
-				cookieBox.classList.add('cookie-box-hide');
-			};
-		}
-	})(jQuery);
-</script>
-
-<!-- cookie style -->
-<style>
-.cookie-box {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 9999;
-  padding: 1rem 2rem;
-  background: rgb(71, 71, 71);
-  transition: all .75s cubic-bezier(.19, 1, .22, 1);
-  color: #fdfdfd;
-}
-
-.cookie-box-hide {
-  display: none;
-}
-</style>
-{{ end }}

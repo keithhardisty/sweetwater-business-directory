@@ -1,24 +1,45 @@
 {{ define "main" }}
+<section class="container container--narrow section">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="prose lede">{{ . }}</div>{{ end }}
 
-<!-- blog -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto px-0">
-        <h2 class="mb-4">Posts related to <span class="text-primary">{{ .Title }}</span></h2>
-        <div class="bg-white shadow block">
-          {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-          {{ range $paginator.Pages }}
-          {{ .Render "article" }}
-          {{ end }}
-          <!-- pagination -->
-          <div class="mt-5">
-            {{ template "_internal/pagination.html" . }}
-          </div>
-        </div>
+  {{ $paginator := .Paginate .RegularPages }}
+
+  {{ if $paginator.Pages }}
+  <ul class="post-list" style="margin-top: var(--sp-6);">
+    {{ range $paginator.Pages }}
+    <li class="post-card">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <div class="post-meta">
+        {{ with .Params.author }}<span>{{ . }}</span>{{ end }}
+        {{ if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>{{ end }}
       </div>
-    </div>
+      <p>{{ .Description | default .Summary }}</p>
+      <a class="btn btn--outline btn--sm" href="{{ .RelPermalink }}">Read more</a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ template "pagination" $paginator }}
+  {{ else }}
+  <p class="lede" style="margin-top: var(--sp-6);">Nothing here yet. In the meantime,
+    <a href="{{ "/" | relURL }}">browse the directory</a>.</p>
+  {{ end }}
 </section>
-<!-- /blog -->
+{{ end }}
 
+{{ define "pagination" }}
+{{ if gt .TotalPages 1 }}
+<nav aria-label="Pagination">
+  <ul class="pagination">
+    {{ if .HasPrev }}<li><a href="{{ .Prev.URL }}" rel="prev" aria-label="Previous page">&laquo;</a></li>{{ end }}
+    {{ range .Pagers }}
+    <li{{ if eq . $.PageNumber }} class="is-active"{{ end }}>
+      {{ if eq . $.PageNumber }}<span aria-current="page">{{ .PageNumber }}</span>
+      {{ else }}<a href="{{ .URL }}">{{ .PageNumber }}</a>{{ end }}
+    </li>
+    {{ end }}
+    {{ if .HasNext }}<li><a href="{{ .Next.URL }}" rel="next" aria-label="Next page">&raquo;</a></li>{{ end }}
+  </ul>
+</nav>
+{{ end }}
 {{ end }}
