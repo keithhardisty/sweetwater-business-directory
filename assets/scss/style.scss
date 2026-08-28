@@ -1,24 +1,10 @@
-/*!------------------------------------------------------------------
-[MAIN STYLESHEET]
+/*!
+ * Sweetwater Business Directory
+ * A small, dependency-free stylesheet. No Bootstrap, no icon font.
+ */
 
-PROJECT:	Project Name
-VERSION:	Versoin Number
--------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-[TABLE OF CONTENTS]
--------------------------------------------------------------------*/
-
-@import 'variables';
-
-@import 'mixins';
-
-@import 'typography';
-
-@import 'buttons';
-
-@import 'common';
-
-@import 'templates/navigation.scss';
-
-@import 'templates/main.scss';
+@import 'tokens';
+@import 'base';
+@import 'components';
+@import 'directory';
+@import 'content';

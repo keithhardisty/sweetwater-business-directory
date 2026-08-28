@@ -1,139 +1,154 @@
 {{ define "main" }}
 
-<!-- banner -->
-<section class="banner bg-cover" style="background-image: url('{{ .Site.Params.banner.bgImage | relURL }}');">
-  <img src="{{ .Site.Params.banner.image | relURL }}" class="img-fluid illustration" alt="">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 mb-5 mb-lg-0">
-        <h1>{{ .Site.Params.banner.title | markdownify }}</h1>
+{{- /* Category order: alphabetical, with the catch-all bucket pushed to the end. */ -}}
+{{- $catchAll := slice "misc" "other" "miscellaneous" -}}
+{{- $named := slice -}}
+{{- $tail := slice -}}
+{{- range sort site.Data.tools.tools "title" -}}
+  {{- if in $catchAll (lower .title) -}}
+    {{- $tail = $tail | append . -}}
+  {{- else -}}
+    {{- $named = $named | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $categories := $named -}}
+{{- range $tail }}{{ $categories = $categories | append . }}{{ end -}}
+
+{{- $total := 0 -}}
+{{- range $categories }}{{ $total = add $total (len .tool) }}{{ end -}}
+
+<section class="hero">
+  <div class="container hero__grid">
+   <div class="hero__inner">
+    {{ with site.Params.hero.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+    <h1>{{ site.Params.hero.title }}</h1>
+    <p class="hero__sub">{{ site.Params.hero.subtitle }}</p>
+    <ul class="hero__stats">
+      <li class="hero__stat"><strong>{{ $total }}</strong> businesses</li>
+      <li class="hero__stat"><strong>{{ len $categories }}</strong> categories</li>
+      <li class="hero__stat"><strong>Free</strong> to be listed</li>
+    </ul>
+   </div>
+
+   {{ if site.Params.cta.enable }}
+   <aside class="hero__aside">
+     <p class="eyebrow">{{ site.Params.neighborhood }} residents</p>
+     <h2>{{ site.Params.cta.title }}</h2>
+     <p>{{ site.Params.cta.description }}</p>
+     <a class="btn btn--primary" href="{{ site.Params.cta.button.link | relURL }}">
+       {{ site.Params.cta.button.label }} {{ partial "icon.html" "arrow-right" }}
+     </a>
+   </aside>
+   {{ end }}
+  </div>
+</section>
+
+<div id="directory">
+
+  <div class="filters" id="find">
+    <div class="container">
+      <div class="filters__row">
+        <div class="search" id="directorySearchWrap">
+          <span class="search__icon">{{ partial "icon.html" "search" }}</span>
+          <label class="visually-hidden" for="directorySearch">Search businesses</label>
+          <input class="search__input" id="directorySearch" type="search" autocomplete="off"
+                 placeholder="Search by business, neighbor or service&hellip;">
+          <kbd class="search__kbd">/</kbd>
+          <button class="search__clear" id="directoryClear" type="button" aria-label="Clear search">
+            {{ partial "icon.html" "close" }}
+          </button>
+        </div>
+
+        <label class="visually-hidden" for="directorySort">Sort listings</label>
+        <select class="sort" id="directorySort">
+          <option value="category">By category</option>
+          <option value="name">A&ndash;Z</option>
+        </select>
       </div>
-      <div class="col-12 text-center">
-        <a href="/tools" class="btn btn-primary">Keep it local</a>    
-      </div>
-      <div class="col-lg-6 illustration-mobile">
-        <img src="{{ .Site.Params.banner.image | relURL }}" class="img-fluid" alt="">
+
+      <div class="chips-wrap">
+      <ul class="chips" role="group" aria-label="Filter by category">
+        {{ range $categories }}
+        <li>
+          <button class="chip" type="button" data-category-chip="{{ .title }}" aria-pressed="false">
+            {{ .title }} <span class="chip__count">{{ len .tool }}</span>
+          </button>
+        </li>
+        {{ end }}
+      </ul>
       </div>
     </div>
   </div>
-</section>
-<!-- /banner -->
 
-<!-- blog -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto px-0">
-        <div class="bg-white shadow block">
-          {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
-          {{ range $paginator.Pages }}
-          {{ .Render "article" }}
-          {{ end }}
-          <!-- pagination -->
-          <div class="mt-5">
-            {{"<!-- pagination -->" | safeHTML }}
-            {{ $paginator := .Paginator }}
-            <!-- Number of links either side of the current page. -->
-            {{ $adjacent_links := 2 }}
-            <!-- $max_links = ($adjacent_links * 2) + 1 -->
-            {{ $max_links := (add (mul $adjacent_links 2) 1) }}
-            <!-- $lower_limit = $adjacent_links + 1 -->
-            {{ $lower_limit := (add $adjacent_links 1) }}
-            <!-- $upper_limit = $paginator.TotalPages - $adjacent_links -->
-            {{ $upper_limit := (sub $paginator.TotalPages $adjacent_links) }}
-            <!-- If there's more than one page. -->
-            {{ if gt $paginator.TotalPages 1 }}
-            <nav aria-label="Page navigation">
-              <ul class="pagination justify-content-center align-items-center">
-                <!-- Previous page. -->
-                {{ if $paginator.HasPrev }}
-                <li class="page-item">
-                  <a href="{{ $paginator.Prev.URL }}" class="page-link">
-                    &laquo;
-                  </a>
-                </li>
-                {{ end }}
-                <!-- Page numbers. -->
-                {{ range $paginator.Pagers }}
-                {{ $.Scratch.Set "page_number_flag" false }}
-                <!-- Advanced page numbers. -->
-                {{ if gt $paginator.TotalPages $max_links }}
-                <!-- Lower limit pages. -->
-                <!-- If the user is on a page which is in the lower limit.  -->
-                {{ if le $paginator.PageNumber $lower_limit }}
-                <!-- If the current loop page is less than max_links. -->
-                {{ if le .PageNumber $max_links }}
-                {{ $.Scratch.Set "page_number_flag" true }}
-                {{ end }}
-                <!-- Upper limit pages. -->
-                <!-- If the user is on a page which is in the upper limit. -->
-                {{ else if ge $paginator.PageNumber $upper_limit }}
-                <!-- If the current loop page is greater than total pages minus $max_links -->
-                {{ if gt .PageNumber (sub $paginator.TotalPages $max_links) }}
-                {{ $.Scratch.Set "page_number_flag" true }}
-                {{ end }}
-                <!-- Middle pages. -->
-                {{ else }}
-                {{ if and ( ge .PageNumber (sub $paginator.PageNumber $adjacent_links) ) ( le .PageNumber (add $paginator.PageNumber $adjacent_links) ) }}
-                {{ $.Scratch.Set "page_number_flag" true }}
-                {{ end }}
-                {{ end }}
-                <!-- Simple page numbers. -->
-                {{ else }}
-                {{ $.Scratch.Set "page_number_flag" true }}
-                {{ end }}
-                <!-- Output page numbers. -->
-                {{ if eq ($.Scratch.Get "page_number_flag") true }}
-                <li class="page-item{{ if eq . $paginator }} page-item active {{ end }}">
-                  <a href="{{ .URL }}" class="page-link">
-                    {{ .PageNumber }}
-                  </a>
-                </li>
-                {{ end }}
-                {{ end }}
-                <!-- Next page. -->
-                {{ if $paginator.HasNext }}
-                <li class="page-item">
-                  <a href="{{ $paginator.Next.URL }}" class="page-link">
-                    &raquo;
-                  </a>
-                </li>
-                {{ end }}
-              </ul>
-            </nav>
-            {{ end }}
-            {{"<!-- /pagination -->" | safeHTML }}
-          </div>
-        </div>
-      </div>
+  <div class="container section">
+    <div class="results-bar">
+      <p class="results-bar__count" id="directoryCount" role="status" aria-live="polite">
+        <strong>{{ $total }}</strong> businesses
+      </p>
+      <p>Tap a category to narrow the list<span class="kbd-hint">, or press <kbd>/</kbd> to search</span>.</p>
     </div>
+
+    <div class="empty" id="directoryEmpty" hidden>
+      <h2>No businesses match that search</h2>
+      <p>Try a shorter word, or clear the filters to see all {{ $total }} listings.</p>
+      <button class="btn btn--outline" type="button" id="directoryReset">Show everything</button>
+    </div>
+
+    {{- /* Filled in by JavaScript when the reader switches to A–Z. */ -}}
+    <ul class="biz-grid" id="directoryFlat" hidden></ul>
+
+    {{ range $categories }}
+    {{- $featuredFirst := slice -}}
+    {{- $sorted := sort .tool "company" -}}
+    {{- range $sorted }}{{ if .featured }}{{ $featuredFirst = $featuredFirst | append . }}{{ end }}{{ end -}}
+    {{- range $sorted }}{{ if not .featured }}{{ $featuredFirst = $featuredFirst | append . }}{{ end }}{{ end -}}
+    <section class="cat-group" data-category-group id="category-{{ .title | urlize }}">
+      <div class="cat-group__head">
+        <h2>{{ .title }}</h2>
+        <span class="cat-group__count">{{ len .tool }}</span>
+      </div>
+      <ul class="biz-grid">
+        {{ $category := .title }}
+        {{ range $featuredFirst }}
+          {{ partial "business-card.html" (dict "biz" . "category" $category) }}
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
   </div>
-</section>
-<!-- /blog -->
+</div>
 
-<!-- cta -->
-{{ if .Site.Params.cta.enable }}
-<section class="section pt-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <div class="row shadow bg-white p-5">
-          <div class="col-md-4 text-center text-md-left mb-4 mb-lg-0">
-            <img src="{{ .Site.Params.cta.image | relURL }}" class="mr-4" alt="..."></div>
-          <div class="col-md-8 text-center text-md-left">
-            <h3 class="mt-0">{{ .Site.Params.cta.title | markdownify }}</h3>
-            <p>{{ .Site.Params.cta.description | markdownify }}</p>
-            {{ if .Site.Params.cta.button.enable }}
-            <a href="{{ .Site.Params.cta.button.link | absURL }}"
-              class="btn btn-primary">{{ .Site.Params.cta.button.label }}</a>
-            {{ end }}
-          </div>
-        </div>
-      </div>
+{{ if site.Params.cta.enable }}
+<section class="container section section--tight">
+  <div class="callout">
+    <div class="callout__body">
+      <h2>Know a neighbor who should be here?</h2>
+      <p>Send them this page. Anyone living in {{ site.Params.neighborhood }} can be listed, and it costs nothing.</p>
     </div>
+    <a class="btn btn--primary" href="{{ site.Params.cta.button.link | relURL }}">
+      {{ site.Params.cta.button.label }} {{ partial "icon.html" "arrow-right" }}
+    </a>
   </div>
 </section>
 {{ end }}
-<!-- /cta -->
+
+{{ with first 2 (where site.RegularPages "Type" "post") }}
+<section class="container section section--tight">
+  <h2>From the neighborhood</h2>
+  <ul class="post-list">
+    {{ range . }}
+    <li class="post-card">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <div class="post-meta">
+        {{ with .Params.author }}<span>{{ . }}</span>{{ end }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      </div>
+      <p>{{ .Description | default .Summary }}</p>
+      <a class="btn btn--outline btn--sm" href="{{ .RelPermalink }}">Read more</a>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
 
 {{ end }}

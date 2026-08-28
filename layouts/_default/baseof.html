@@ -1,17 +1,24 @@
-<!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<!doctype html>
+<html class="no-js" lang="{{ site.LanguageCode | default "en-US" }}">
 {{- partial "head.html" . -}}
-
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.googleTagManager }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    {{- partial "preloader.html" . -}}
-    {{- partial "header.html" . -}}
-    {{ if not .IsHome }} <div class="py-5 d-none d-lg-block"></div> {{ end }}
-    {{- block "main" . }}
-    {{- end }}
-    {{- partial "footer.html" . -}}
-</body>
+  {{ with site.Params.google_tag_manager }}
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ . }}" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+  {{ end }}
 
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  {{- partial "header.html" . -}}
+
+  <main id="main">
+    {{- block "main" . }}{{ end -}}
+  </main>
+
+  {{- partial "footer.html" . -}}
+
+  {{- $site := resources.Get "js/site.js" -}}
+  {{- $dir := resources.Get "js/directory.js" -}}
+  {{- $js := slice $site $dir | resources.Concat "js/bundle.js" | minify | fingerprint -}}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+</body>
 </html>

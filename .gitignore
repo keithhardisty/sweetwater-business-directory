@@ -8,3 +8,8 @@ node_modules
 builds
 package-lock.json
 
+
+# Hugo build output and asset cache
+exampleSite/public/
+exampleSite/resources/
+.hugo_build.lock
