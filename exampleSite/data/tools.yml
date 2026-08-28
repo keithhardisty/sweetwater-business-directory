@@ -441,6 +441,7 @@ tools:
     image: "/images/jesplay.png"
   - company: Nestling Nurse
     name: Yvonne
+    image: "/images/nestling-nurse.png"
     description: Night nurse and nurse-led postpartum doula collective. Newborn care.
     link: https://nestlingnurse.com
     email: nestlingnurse@gmail.com
