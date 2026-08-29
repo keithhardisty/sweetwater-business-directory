@@ -38,15 +38,6 @@ tools:
     link: https://www.quantumelectronicpayments.com
     email: darren@quantumepay.com
     phone: 949-500-8384
-  - image: "/images/riverside-staffing.png"
-    company: Riverside Staffing
-    name: Ryen Peck
-    description: 'We help software companies across the country with their staffing
-      needs. We can help your business with staffing or if you are on the market for
-      a new role I’d love to connect! '
-    link: https://riversidestaffing.io/
-    email: ryen@riversidestaffing.io
-    phone: 650-380-6796
   - image: "/images/rgd.png"
     company: Ross Golf Design, LLC
     name: Brian Ross
@@ -54,14 +45,6 @@ tools:
     link: https://www.rossgolfarchitects.com/
     email: brian@rossgolfarchitects.com
     phone: 512-492-2928
-  - image: "/images/screen-shot-2021-08-23-at-8-41-20-pm.png"
-    company: The Art of eXecution
-    name: Raquel Rodriguez
-    description: Helping entrepreneurs and businesses work ON their business while
-      they work In their business. We execute.
-    link: https://www.theartofexecution.com
-    email: raquel.rodriguez@theartofexecution.com
-    phone: 917-697-0923
 - title: Education
   tool:
   - image: "/images/screen-shot-2021-08-23-at-8-32-16-pm.png"
@@ -101,15 +84,6 @@ tools:
     email: Amyswift@westaustindance.com
     phone: 512-263-2277
     image: "/images/west-austin-dance-academy.png"
-- title: Fashion
-  tool:
-  - company: Stella & Dot
-    name: Stephanie Budai
-    description: Jewelry, Clothing and Handbags/In home style sessions
-    link: https://www.stelladot.com/sites/sbudai
-    email: jewelsbudai@gmail.com
-    phone: 903-880-7706
-    image: "/images/stella-and-dot.png"
 - title: Fitness & Medical
   tool:
   - company: Anytime Fitness
@@ -172,13 +146,6 @@ tools:
     link: https://nuthousebakery.com/
     email: thenuthousebakery@gmail.com
     phone: 925-315-1297
-  - image: "/images/reunion19.png"
-    company: Reunión 19 and R19 Taqueria
-    name: 'Christopher Haydostian '
-    description: 'Texas’ #1 Cali-Mex restaurants. '
-    link: https://reunion19atx.com/
-    email: christopher@r19taqueria.com
-    phone: 702-540-4040
   - image: "/images/simply-fabulous-bakery.png"
     company: Simply Fabulous Bakery
     name: Michelle Carruth
@@ -202,13 +169,6 @@ tools:
     link: https://balloonsmagic.com/
     email: sarah@balloonsmagic.com
     phone: 512-800-8989
-  - image: "/images/big-electric-bikes.png"
-    company: Bigs Electric Bikes
-    name: Jason Corder
-    description: Electric Bikes distribution
-    link: https://bigselectricbikes.com/
-    email: Jason.Corder@outlook.com
-    phone: 949-690-7649
   - image: "/images/big-party-events.png"
     company: Big Party Events
     name: Serena Fazio
@@ -217,17 +177,6 @@ tools:
     link: http://www.bigpartyeventsatx.com/
     email: info@bigpartyeventsatx.com
     phone: 512-412-1906
-  - image: "/images/bluebonnet-picnic-company.png"
-    company: Bluebonnet Picnic Company
-    name: Hilary Coniglione
-    description: 'Located in Austin’s hill country, Bluebonnet Picnic Company provides
-      a local luxury pop-up picnic experience in Austin, Lakeway, Bee Cave, Westlake,
-      Dripping Springs, Spicewood, and beyond. A luxury picnic is the perfect way
-      to celebrate a birthday, anniversary, bridal shower, bachelorette party, date
-      night, baby shower, girls day out, and more. '
-    link: https://bluebonnetpicnic.com/
-    email: bluebonnetpicnic@gmail.com
-    phone: 508-340-3356
   - image: "/images/travel-abundance.png"
     company: Travel Abundance
     name: Natalie Kloss-Biagini
@@ -257,27 +206,6 @@ tools:
     phone: 512-487-4873
 - title: Health & Beauty
   tool:
-  - image: "/images/bc.png"
-    company: Beautycounter
-    name: Kristen Ellis
-    description: 'Clean beauty. High performing and effective skincare and makeup
-      with clean and safe ingredients. '
-    link: https://www.beautycounter.com/kristenellis
-    email: kristenmg.ellis@gmail.com
-    phone: 512-919-6807
-  - company: BeautyCounter
-    name: Karen Bryant
-    description: High performing , safer skin, hair, kids, baby products and make-up.
-    link: http://www.beautycounter.com/karenbryant
-    image: "/images/beautycounter.png"
-  - image: "/images/emily-pearl-lashes.png"
-    company: Emily Pearl Lashes
-    name: Emily
-    description: 'Eyelashes, teeth whitening, spray tanning (The most affordable prices
-      in the area!) '
-    link: https://www.emilypearlslashes.com/
-    email: emilypearlquick@gmail.com
-    phone: 650-448-7256
   - company: Hey Nanabread
     name: Jeanne Hunt
     description: Handmade quilted cosmetic bags made from coordinating designer quilting
@@ -304,31 +232,10 @@ tools:
     email: cyantnuskin@gmail.com
     phone: 713-478-8515
     image: "/images/nuskin.png"
-  - company: Rodan+Fields
-    name: Winifred Yu
-    description: Rodan+Fields provides skincare products for men and women.
-    link: https://winifredyu.myrandf.com/
-    email: winimom3@gmail.com
-    image: "/images/rodan-and-fields.png"
-  - image: "/images/hilary.png"
-    company: Rodan+Fields
-    name: Hilary Coniglione
-    description: '2020’s #1 Premium Skincare Brand! Whatever your skincare goals are,
-      allow me to help you find the right solution tailored to your needs. '
-    link: https://hilaryc.myrandf.com/
-    email: hilaryconiglione@gmail.com
-    phone: 508-340-3386
   - company: Rodan+Fields, Monat, Poppy Event Design
     name: Kristi Gilbert
     description: Skincare and Haircare products.
     phone: 312-502-7600
-  - company: Younique Skin Products
-    name: Donna Kobayashi
-    description: Younique cosmetics & skin care are hypoallergenic, chemical and cruelty-free,
-      mineral-based and long-lasting. And always come with 100% Love It Guarantee.
-    link: http://www.thedivadonna.com/
-    email: YouniqueByDivaDonna@gmail.com
-    image: "/images/younique.png"
 - title: Home Services
   tool:
   - image: "/images/austin-living-landscapes.png"
@@ -384,14 +291,6 @@ tools:
     link: https://www.harmonizedhomebysherry.com/
     phone: 512-893-3400
     image: "/images/harmoized-home.png"
-  - company: Live Love Thanks
-    name: Jenny Brown
-    description: Helping purpose-driven women to permanently eliminate clutter so
-      that they can become 10x more decisive and step more into their purpose and
-      contribution.
-    link: https://livelovethanks.com/
-    email: jenny@livelovethanks.com
-    image: "/images/live-love-thanks.png"
   - description: We are two mommas who are passionate about helping busy families
       in Austin experience more organized spaces and less clutter.
     company: Momma Method Personal Organizing
@@ -407,13 +306,6 @@ tools:
     link: ''
     email: neatco.atx@gmail.com
     phone: 402-547-3967
-  - image: "/images/optic-fence.png"
-    company: Optic Fence
-    name: Brian Ellis
-    description: Fence and gate contractor
-    link: https://opticfence.com/
-    email: brian@opticresidential.com
-    phone: 512-987-3929
   - company: Pampered Chef
     name: Coretta Jenkins
     description: 
@@ -439,6 +331,24 @@ tools:
     link: https://www.jesplay.com/
     phone: 954-579-4581
     image: "/images/jesplay.png"
+  - company: Nestling Nurse
+    name: Yvonne
+    image: "/images/nestling-nurse.png"
+    description: Night nurse and nurse-led postpartum doula collective. Newborn care.
+    link: https://nestlingnurse.com
+    email: nestlingnurse@gmail.com
+    phone: 469-288-0802
+    tags:
+    - night nurse
+    - newborn care
+    - postpartum
+    - doula
+    - baby nurse
+    - sleep consultant
+    - feeding support
+    - breastfeeding
+    - new parent education
+    - fourth trimester
   - company: The Teething Egg
     name: Dean & Jessica Luntz
     description: Teething toys/accessories for babies
@@ -584,13 +494,6 @@ tools:
     link: https://www.gilligangrouprealestate.com/
     email: gilligangroup@jbgoodwin.com
     phone: 512-763-7074
-  - image: "/images/lauren-frost.png"
-    company: Keller Williams Realty Lake Travis
-    name: Lauren Frost
-    description: Real Estate Services
-    link: http://www.frosthomesatx.com
-    email: laurenfrost@kw.com
-    phone: 973-769-1340
   - image: "/images/kellwe-williams.png"
     company: Keller Williams Realty
     name: Jason Podzemny
